@@ -278,9 +278,16 @@
 
 **② minimind（中文小模型全流程实现）**
 
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind
+- 🔗 仓库地址：https://github.com/jingyaogong/minimind 
+https://github.com/jingyaogong/minimind-v (多模态版本)
 - ⭐ GitHub Stars: 20k+
 - 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline
+
+**③ LLM-from-scratch （从零实现大模型功能拆解讲述）**
+
+- 🔗 仓库地址：https://github.com/MLNLP-World/LLMs-from-scratch-CN
+- ⭐ GitHub Stars: 2k+
+- 💡 推荐理由：不仅关注 LLMs 的基础构建，如 Transformer 架构、序列建模 等，还深入探索了 GPT、BERT 等深度学习模型 的底层实现。项目中的每一部分均配备详细的代码实现和学习资源，帮助学习者从零开始构建 LLMs，全面掌握其核心技术。
 
 **推荐学习顺序：**
 
