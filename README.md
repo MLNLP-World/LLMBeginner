@@ -126,13 +126,22 @@
 - 🔗 课程链接：https://www.bilibili.com/video/BV1XP4y1d7Bk
 - 💡 推荐理由：中文讲解清晰，善用直观类比，适合快速建立 RL 整体认知
 
+**③ 王树森：深度强化学习（DRL）**
+
+- 🔗 课程链接：https://www.bilibili.com/video/BV12o4y197US
+- 💡 推荐理由：史蒂文斯理工学院王树森博士主讲，语言简洁有力，抛弃繁琐的数学推导，直接给出直观易懂的结论，初学者能在短时间内快速建立 DRL 整体体系认知
+
 #### 💻 2.2 代码学习
 
-**Stable-Baselines3**
+**① Hands-on-RL（动手学强化学习）**
 
-- 🔗 仓库地址：https://github.com/DLR-RM/stable-baselines3
-- ⭐ GitHub Stars: 9k+
-- 💡 推荐理由：封装了 PPO、DQN、A2C 等主流 RL 算法，代码清晰易读，文档完善，几行代码即可跑起实验，是目前最适合初学者上手的 RL 库
+- 🔗 仓库地址：https://github.com/boyu-ai/Hands-on-RL
+- 💡 推荐理由：配套教材《动手学强化学习》，从基础算法（Q-Learning）到 PPO 逐步实现，代码简洁，适合边学理论边写代码
+
+**② easy-rl（强化学习中文教程）**
+
+- 🔗 仓库地址：https://github.com/datawhalechina/easy-rl
+- 💡 推荐理由：Datawhale 出品，中文注释详细，覆盖主流 RL 算法实现，社区活跃，适合中文学习者系统入门
 
 ---
 
