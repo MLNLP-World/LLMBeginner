@@ -1,6 +1,27 @@
+<div align="center">
+
 # Slay the LLM Maze
 
 > 一个面向初学者的学习路径：从零基础出发，系统掌握大语言模型（LLM）的核心知识与实践技能 🚀
+
+![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
+![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
+![License](https://img.shields.io/github/license/chenyuanTKCY/Slay-the-LLM-Maze)
+![Last Commit](https://img.shields.io/github/last-commit/chenyuanTKCY/Slay-the-LLM-Maze)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Awesome](https://awesome.re/badge.svg)
+
+</div>
+
+---
+
+## 📰 News
+
+- **2026-04** - 新增 Stage 2 多模态 LLM 章节，涵盖 CLIP、LLaVA 等核心论文
+- **2026-04** - 新增推理模型（Reasoning）章节，包含 DeepSeek-R1、Chain-of-Thought 等内容
+- **2026-04** - 完成 Stage 0-2 核心内容，覆盖从基础到 LLM 实战的完整路径
+- **2026-04** - 项目启动，建立学习路线框架
 
 ---
 
@@ -8,12 +29,13 @@
 
 本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
 
-| 阶段 | 学习重点 | 核心目标 | 预期产出 |
-|:---:|:---|:---|:---|
-| **Stage 0** | Big Picture | 理解整体路径与最终目标 | 个人学习计划 |
-| **Stage 1** | DL + RL | 建立深度学习与强化学习基础 | 基础练习与训练笔记 |
-| **Stage 2** | LLM | 构建大语言模型并掌握后训练方法 | 基础学习与实战项目 |
-| **Stage 3** | Agent | 构建智能体框架与应用 | 基础学习与实战项目 |
+| 阶段 | 学习重点 | 核心目标 | 
+|:---:|:---|:---|
+| **Stage 0** | Big Picture | 理解整体路径与最终目标 |
+| **Stage 1** | DL + RL | 建立深度学习与强化学习基础 |
+| **Stage 2** | LLM | 构建大语言模型并掌握后训练方法 |
+| **Stage 3** | Agent | 构建智能体框架与应用 |
+
 
 ---
 
@@ -70,7 +92,7 @@
 | 我的已有基础？ | Python 熟练度 / 数学基础（线代、概率） |
 | 我计划跳过哪些内容？ | 结合目标裁剪路径，避免无效学习 |
 
-> 💬 建议：把你的学习计划写成一个 Markdown 文件放在本仓库，定期回顾和更新。
+> 💬 建议：把你的学习计划写成一个 Markdown 文件放在本地仓库的专用文件夹，定期回顾和更新。
 
 ---
 
@@ -227,11 +249,7 @@
 - 🔗 论文地址：https://arxiv.org/abs/2305.18290
 - 💡 推荐理由：绕过奖励模型，直接从偏好数据优化策略，是目前工业界最常用的对齐方案之一
 
-**③ veRL（大规模 RLHF 训练框架）**
 
-- 🔗 仓库地址：https://github.com/volcengine/verl
-- ⭐ GitHub Stars: 8k+
-- 💡 推荐理由：字节跳动开源的分布式 RLHF 训练框架，支持 PPO / GRPO 等算法，与 HuggingFace 生态无缝集成，是目前在真实大模型上做 RLHF 实验的最佳选择之一
 
 ---
 
@@ -315,6 +333,13 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 - 🔗 仓库地址：https://github.com/hiyouga/LLaMA-Factory
 - ⭐ GitHub Stars: 40k+
 - 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛
+
+
+**③ veRL（大规模 RLHF 训练框架）**
+
+- 🔗 仓库地址：https://github.com/volcengine/verl
+- ⭐ GitHub Stars: 8k+
+- 💡 推荐理由：字节跳动开源的分布式 RLHF 训练框架，支持 PPO / GRPO 等算法，与 HuggingFace 生态无缝集成，是目前在真实大模型上做 RLHF 实验的最佳选择之一
 
 #### 5.2 推理与部署
 
