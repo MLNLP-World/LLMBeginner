@@ -1,10 +1,8 @@
 <div align="center">
 
-# Slay the LLM Maze
+<img src="asset/image(1).png" alt="Slay the LLM Maze" width="320" />
 
-> 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。整体内容采用分阶段设计，从 Big Picture 到底层机制，再到项目实践与系统搭建，力求路径清晰、节奏可控，帮助学习者逐步建立较为完整的认知与动手能力 🚀
-由于我们能力与经验有限，内容难免存在不足或疏漏，敬请大家谅解。
-
+# 破阵大模型 零基础也能通关 LLM 的项目式学习路线
 ![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
@@ -12,6 +10,10 @@
 ![Last Commit](https://img.shields.io/github/last-commit/chenyuanTKCY/Slay-the-LLM-Maze)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![Awesome](https://awesome.re/badge.svg)
+> 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。整体内容采用分阶段设计，从 Big Picture 到底层机制，再到项目实践与系统搭建，力求路径清晰、节奏可控，帮助学习者逐步建立较为完整的认知与动手能力 🚀
+由于我们能力与经验有限，内容难免存在不足或疏漏，敬请大家谅解。
+
+
 
 </div>
 
@@ -304,8 +306,10 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 **③ LLM-from-scratch （从零实现大模型功能拆解讲述）**
 
-- 🔗 仓库地址：https://github.com/MLNLP-World/LLMs-from-scratch-CN
+- 🔗 中文翻译版本仓库地址：https://github.com/MLNLP-World/LLMs-from-scratch-CN
 - ⭐ GitHub Stars: 2k+
+- 🔗 原仓库地址：https://github.com/rasbt/LLMs-from-scratch
+- ⭐ GitHub Stars: 91k+
 - 💡 推荐理由：不仅关注 LLMs 的基础构建，如 Transformer 架构、序列建模 等，还深入探索了 GPT、BERT 等深度学习模型 的底层实现。项目中的每一部分均配备详细的代码实现和学习资源，帮助学习者从零开始构建 LLMs，全面掌握其核心技术。
 
 **推荐学习顺序：**
