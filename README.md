@@ -768,7 +768,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 10k+ 
 - 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。与 MobileRun 相比更侧重模型能力（VLM + 强化学习微调），MobileRun 更侧重工程框架与真机部署。
 
-**AgentCPM-GUI（OpenBMB，端侧 Android GUI Agent）**
+**AgentCPM-GUI**
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
@@ -808,12 +808,12 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **OpenClaw**
 - 🔗 仓库地址：https://github.com/openclaw/openclaw
 - ⭐ GitHub Stars: 360k+（GitHub 史上最快破记录的开源项目）
-- 💡 项目背景：由奥地利独立开发者 Peter Steinberger 于 2025 年 11 月发布，本地运行、全平台支持，通过 Skill 插件体系可扩展各类自动化能力，接入 Telegram / Feishu / WeChat 等 20+ 渠道，100 天内超过 Linux 和 React 成为 GitHub 最多 Star 的软件仓库
+- 💡 项目背景：由奥地利独立开发者 Peter Steinberger 于 2025 年 11 月发布，本地运行、全平台支持，通过 Skill 插件体系可扩展各类自动化能力，接入 Telegram / Feishu / WeChat 等 20+ 渠道，100 天内超过 Linux 和 React 成为 GitHub 最多 Star 的软件仓库。
 
 **xiaohongshu-ops-skill（OpenClaw 小红书运营插件）**
 - 🔗 仓库地址：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
 - ⭐ GitHub Stars: 600+
-- 💡 推荐理由：将 OpenClaw 变成小红书运营助手，支持"分析竞品 → 智能选题 → 生成文案 → 自动发布"全流程，基于浏览器自动化（CDP）真实账号操作，作者实测 20 天从 0 粉涨到 1000+ 粉，且未触发风控
+- 💡 推荐理由：将 OpenClaw 变成小红书运营助手，支持"分析竞品 → 智能选题 → 生成文案 → 自动发布"全流程，基于浏览器自动化（CDP）真实账号操作，作者实测 20 天从 0 粉涨到 1000+ 粉，且未触发风控。
 - 🛠️ 推荐实现路径：
   ```
   1. 安装 OpenClaw 本体，配置 LLM API Key
@@ -821,37 +821,37 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
   3. 扫码绑定小红书账号（仅需一次）
   4. 下达自然语言指令，Agent 自动完成热点抓取 → 文案创作 → 定时发布
   ```
-- ⚠️ 注意：控制操作频率，避免短时大量发布触发平台风控
+- ⚠️ 注意：控制操作频率，避免短时大量发布触发平台风控。
 
 
 
 #### ⚖️ 法律智能体
 
-**ChatLaw（中文法律大模型，北京大学出品）**
+**ChatLaw**
 
 - 🔗 仓库地址：https://github.com/PKU-YuanGroup/ChatLaw
 - 🔗 论文地址：https://arxiv.org/abs/2306.16092
 - ⭐ GitHub Stars: 7k+
-- 💡 推荐理由：北大元语言团队出品，采用 MoE 混合专家模型 + 多智能体协作架构，内置四类 Agent 角色（信息收集、法律研究、法律建议、报告生成），在 LawBench 上以 60.08 分显著超越 GPT-4（52.35 分）。融合知识图谱与 9.3 万份判决书训练的相似度模型，是目前最完整的中文法律多 Agent 系统实现
-- 🎯 实战建议：跑通多 Agent 协作的离婚咨询 Demo，理解"信息收集 → 法规检索 → 生成咨询报告"的完整 SOP 流程
+- 💡 推荐理由：北大元语言团队出品，采用 MoE 混合专家模型 + 多智能体协作架构，内置四类 Agent 角色（信息收集、法律研究、法律建议、报告生成），在 LawBench 上以 60.08 分显著超越 GPT-4（52.35 分）。融合知识图谱与 9.3 万份判决书训练的相似度模型，是目前最完整的中文法律多 Agent 系统实现。
+- 🎯 实战建议：跑通多 Agent 协作的离婚咨询 Demo，理解"信息收集 → 法规检索 → 生成咨询报告"的完整 SOP 流程。
 
 #### 📈 金融智能体
 
-**FinGPT（开源金融大模型）**
+**FinGPT**
 - 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinGPT
 - ⭐ GitHub Stars: 19k+
-- 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目
+- 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目。
 
 **FinRobot（金融 Agent 平台，更推荐实战）**
 - 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinRobot
 - ⭐ GitHub Stars: 6k+
-- 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板
+- 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板。
 
 #### 🏥 医疗健康助手
 
-**HuatuoGPT（华佗 GPT，中文医疗大模型）**
+**HuatuoGPT**
 - 🔗 仓库地址：https://github.com/FreedomIntelligence/HuatuoGPT
 - 🔗 在线 Demo：https://www.huatuogpt.cn/
 - ⭐ GitHub Stars: 1k+
-- 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM
-- 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计
+- 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM。
+- 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计。
