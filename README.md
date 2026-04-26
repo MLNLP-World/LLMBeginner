@@ -37,6 +37,7 @@
 | **Stage 2** | LLM | 构建大语言模型并掌握后训练方法 |
 | **Stage 3** | Agent | 构建智能体框架与应用 |
 
+<img src="asset/image_route.png" alt="Slay the LLM Maze" width="820" />
 
 ---
 
