@@ -856,3 +856,23 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 1k+
 - 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM。
 - 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计。
+
+### 👥 组织者
+
+<p align="center">
+  <a href="https://github.com/chenyuanTKCY">
+    <img src="https://github.com/chenyuanTKCY.png" width="64" height="64" alt="chenyuanTKCY" />
+  </a>
+  <a href="https://github.com/ffcosmos">
+    <img src="https://github.com/ffcosmos.png" width="64" height="64" alt="ffcosmos" />
+  </a>
+  <a href="https://github.com/Nahtreom">
+    <img src="https://github.com/Nahtreom.png" width="64" height="64" alt="Nahtreom" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/chenyuanTKCY">chenyuanTKCY</a> |
+  <a href="https://github.com/ffcosmos">ffcosmos</a> |
+  <a href="https://github.com/Nahtreom">Nahtreom</a>
+</p>
