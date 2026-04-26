@@ -414,9 +414,9 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：**Agent = LLM（大脑） + 记忆 + 规划 + 工具使用。它能自主感知环境、做出决策并执行动作。
+**定义：** Agent = LLM（大脑） + 记忆 + 规划 + 工具使用。它能自主感知环境、做出决策并执行动作。
 
-**与普通 Chatbot 的区别：**Chatbot 是被动响应，Agent 是主动规划与行动。
+**与普通 Chatbot 的区别：** Chatbot 是被动响应，Agent 是主动规划与行动。
 
 **能力边界：**
 
