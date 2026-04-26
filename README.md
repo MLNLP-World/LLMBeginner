@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="asset/image(1).png" alt="Slay the LLM Maze" width="320" />
+<img src="asset/image.png" alt="Slay the LLM Maze" width="320" />
 
-# 破阵大模型 零基础也能通关 LLM 的项目式学习路线
+# 零基础通关 LLM 的项目式学习路线
 ![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
