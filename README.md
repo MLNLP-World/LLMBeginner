@@ -555,15 +555,216 @@ def search(query: str) -> str:
 
 ---
 
-### 🤝 三、多智能体系统原理
+### 🤝 三、多智能体系统
+
+
+多智能体系统（Multi-Agent System，MAS）是指由多个具有自主决策能力的 AI Agent 协同完成复杂任务的系统。多 Agent 的核心优势在于任务分解、角色专业化与并行执行。
+
 
 #### 🎯 3.1 什么是多智能体系统：任务驱动协作、自治群体交互
 
+**核心思想**： 将一个复杂任务拆解给多个具有不同角色或能力的 Agent，让它们通过协作共同完成目标——类似于一个软件开发团队，产品经理、程序员、测试员各司其职。
+
+**两种典型范式：**
+
+| 范式 | 说明 | 代表系统 |
+| :--- | :--- | :--- |
+| **任务驱动协作** | 由明确目标驱动，Agent 分工完成子任务，最终汇总结果 | ChatDev、AutoGen |
+| **自治群体交互** | Agent 在共享环境中自由交互，涌现出复杂的社会行为 | 斯坦福小镇 (Generative Agents) |
+
+**推荐课程：**
+
+**① 吴恩达：多智能体系统入门介绍**
+
+- 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
+- 💡 推荐理由：介绍多 Agent 的核心概念与应用场景
+  
+**② HuggingFace Agents Course（系统入门首选）**
+
+- 🔗 课程地址：https://huggingface.co/learn/agents-course/
+- 💡 推荐理由：HuggingFace 官方出品，从单 Agent 基础到多 Agent 协作循序渐进，配有可直接运行的代码实践，是目前最完整的开源 Agent 入门课程
+
+**代表系统精读：**
+
+**① ChatDev（任务驱动的软件开发多智能体）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2307.07924
+- 🔗 仓库地址：https://github.com/OpenBMB/ChatDev
+- ⭐ GitHub Stars: 32k+
+- 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接
+
+**② Generative Agents：斯坦福小镇（自治群体交互）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2304.03442
+- 💡 重点理解：25 个 Agent 在模拟小镇中自主生活、社交、形成记忆，展示了 LLM 驱动的群体涌现行为。核心机制：记忆流（Memory Stream）+ 反思（Reflection）+ 行动规划（Planning）
+
+
+**延伸阅读：**
+
+**① A Survey on LLM-based Autonomous Agents（全景综述）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2308.11432
+- 💡 推荐理由：全面梳理 LLM Agent 的记忆、规划、工具使用与多 Agent 协作四大模块，适合在深入某个方向前建立完整的认知框架
+
+**② Large Language Model based Multi-Agents: A Survey of Progress and Challenges（多智能体专项综述）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2402.01680
+- 💡 推荐理由：专注于多 Agent 系统本身，系统梳理 LLM 驱动的多 Agent 在通信、组织、环境与应用上的最新进展与挑战
+
 #### 📡 3.2 智能体之间如何「说话」？——交互协议
+
+多 Agent 协作的基础是通信。不同系统对 Agent 间的消息格式、通信方式有不同设计。
+
+**① 自然语言消息（最常见）**
+
+- Agent 直接用自然语言对话，灵活但容易产生歧义
+- 代表框架：AutoGen、ChatDev
+
+**② 结构化消息（更可靠）**
+
+- 消息包含固定字段：role / content / tool_calls / metadata
+- 降低解析错误，便于流程控制
+- 代表框架：OpenAI Swarm、LangGraph
+- 前沿趋势：跳过文本，直接在模型的 hidden embedding 层交换信息（潜空间通信）
+
+**③ 共享黑板（Blackboard）**
+
+- Agent 不直接通信，而是读写一块共享状态
+- 适合异步、松耦合的协作场景
+- 代表框架：部分 CrewAI 实现
+
+**④ 工具调用（Tool Call）**
+
+- Agent 通过调用对方暴露的”工具接口”间接协作
+- 本质是函数调用，类型安全，易于调试
+
+**关键设计问题：**
+
+- 同步 vs 异步：Agent 是轮流发言（同步对话）还是并行执行后汇总（异步）？
+- 消息路由：谁决定把消息发给哪个 Agent？（广播 / 点对点 / 中心调度）
+- 终止条件：多 Agent 对话何时结束？如何避免无限循环？
+
+**推荐课程：**
+
+**① DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
+
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
+- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程
+
+**推荐阅读：**
+
+**① AutoGen 论文（结构化多 Agent 对话框架）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2308.08155
+- 🔗 仓库地址：https://github.com/microsoft/autogen
+- ⭐ GitHub Stars: 57k+
+- 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一
+
+**② CAMEL（角色扮演的多 Agent 通信范式）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2303.17760
+- 🔗 仓库地址：https://github.com/camel-ai/camel
+- ⭐ GitHub Stars: 16k+
+- 💡 推荐理由：最早系统研究 LLM Agent 间角色扮演通信的论文，提出用"任务指定 Agent"驱动"执行 Agent"的双 Agent 通信范式，是理解 Agent 对话如何被设计的经典入门文献
 
 #### 🏛️ 3.3 智能体团队如何「组织」？——组织结构
 
+Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误如何被发现与纠正。
+
+```
+① 层级式（Hierarchical）
+    Orchestrator Agent（总指挥）
+        ├── Sub-Agent A（负责子任务 1）
+        ├── Sub-Agent B（负责子任务 2）
+        └── Sub-Agent C（负责子任务 3）
+    → 适合任务边界清晰、需要统一调度的场景
+    → 代表：AutoGen GroupChat with Manager、LangGraph supervisor
+② 扁平式（Flat / Peer-to-Peer）
+    Agent A ←→ Agent B ←→ Agent C
+    → Agent 平等协商，无中心节点
+    → 灵活但容易陷入无效循环，需要设计好终止机制
+③ 流水线式（Pipeline）
+    Agent A → Agent B → Agent C → 输出
+    → 每个 Agent 处理上一个的输出，适合有明确先后依赖的任务
+    → 代表：ChatDev 的开发流程、RAG pipeline
+```
+
+**角色设计的核心原则：**
+
+- 专业化：每个 Agent 聚焦一个能力领域（如”代码审查员”只负责 review）
+- 互补性：不同 Agent 的能力边界要清晰，避免职责重叠导致冲突
+- 对抗验证：引入”批评者 Agent”检查其他 Agent 的输出，提升系统鲁棒性
+
+**推荐课程：**
+
+**① DeepLearning.AI：Multi AI Agent Systems with crewAI**
+
+- 🔗 课程地址：https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
+- 💡 推荐理由：crewAI 作者主讲，从层级式到流水线式手把手搭建多 Agent 系统，是理解 Agent 团队组织方式最直观的实战课程
+
+
+**推荐阅读：**
+
+**① CrewAI（角色扮演式多 Agent 框架）**
+
+- 🔗 仓库地址：https://github.com/crewAIInc/crewAI
+- ⭐ GitHub Stars: 49k+
+- 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用
+
+**② LangGraph（基于图结构的 Agent 编排）**
+
+- 🔗 仓库地址：https://github.com/langchain-ai/langgraph
+- ⭐ GitHub Stars: 30k+
+- 💡 推荐理由：将 Agent 协作流程建模为有向图（节点 = Agent/工具，边 = 消息流），支持条件分支、循环、并行执行，适合需要精确控制流程的复杂 MAS 场景
+
+**③ MetaGPT（将公司 SOP 编码为 Agent 协作规范）**
+
+- 🔗 论文地址：https://arxiv.org/abs/2308.00352
+- 🔗 仓库地址：https://github.com/geekan/MetaGPT
+- ⭐ GitHub Stars: 67k+
+- 💡 推荐理由：将软件公司的标准操作流程（SOP）嵌入 Agent 角色定义，产品经理 → 架构师 → 工程师 → QA 的流水线协作，是"流水线式组织结构"最典型的实现，也是 GitHub 上最受关注的多 Agent 框架之一
+
 #### 🌍 3.4 智能体在什么「世界」里活动？——协作环境
+
+Agent 的行动空间（Environment）定义了它能感知什么、能执行什么操作。不同任务对环境的要求差异很大。
+```
+① 文本/对话环境
+    → Agent 的世界就是消息历史（Context Window）
+    → 感知：读取对话历史；行动：生成文本或调用工具
+    → 适合：问答、写作、代码生成等纯语言任务
+② 工具/代码执行环境
+    → Agent 可以调用外部工具：搜索引擎、代码解释器、数据库、API
+    → 感知：工具返回结果；行动：选择并调用工具
+    → 适合：需要与真实世界交互的任务（如数据分析、网页操作）
+    → 代表：OpenAI Code Interpreter、LangChain Tools
+③ 模拟/沙盒环境
+    → 为 Agent 构建一个模拟的”世界”（如模拟小镇、虚拟代码仓库）
+    → 感知：环境状态（位置、物品、其他 Agent 的行为）；行动：移动、交互、修改环境
+    → 适合：研究 Agent 的社会行为、测试复杂策略
+    → 代表：斯坦福小镇（Smallville）、SWE-bench（模拟软件工程任务）
+```
+
+**关键挑战：**
+- 长期记忆：如何让 Agent 记住跨轮次的关键信息？（向量数据库 + 记忆压缩）
+- 环境反馈质量：工具返回的信息是否足够让 Agent 做下一步决策？
+- 安全边界：如何防止 Agent 执行危险操作？（沙盒隔离、权限控制）
+
+**推荐阅读：**
+
+**① AgentVerse**
+
+- 🔗 论文地址：https://arxiv.org/abs/2308.10848
+- 🔗 仓库地址：https://github.com/OpenBMB/AgentVerse
+- ⭐ GitHub Stars: 5k+
+- 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"
+
+**② MultiAgentBench**
+
+- 🔗 论文地址：https://arxiv.org/abs/2503.01935
+- 🔗 仓库地址：https://github.com/ulab-uiuc/MARBLE
+- 💡 推荐理由：MultiAgentBench 是一个模块化且可扩展的架构，支持开发者快速构建、测试和评估多智能体系统。它通过统一的 API 管理智能体间的通讯、共享内存和环境交互。
+
+
 
 ### 🧪 四、实战项目
 
@@ -626,10 +827,53 @@ def search(query: str) -> str:
 
 #### 🛍️ 基于 OpenClaw 部署小红书自动运营
 
+**OpenClaw**
+- 🔗 仓库地址：https://github.com/openclaw/openclaw
+- ⭐ GitHub Stars: 360k+（GitHub 史上最快破记录的开源项目）
+- 💡 项目背景：由奥地利独立开发者 Peter Steinberger 于 2025 年 11 月发布，本地运行、全平台支持，通过 Skill 插件体系可扩展各类自动化能力，接入 Telegram / Feishu / WeChat 等 20+ 渠道，100 天内超过 Linux 和 React 成为 GitHub 最多 Star 的软件仓库
+
+**xiaohongshu-ops-skill（OpenClaw 小红书运营插件）**
+- 🔗 仓库地址：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
+- ⭐ GitHub Stars: 600+
+- 💡 推荐理由：将 OpenClaw 变成小红书运营助手，支持"分析竞品 → 智能选题 → 生成文案 → 自动发布"全流程，基于浏览器自动化（CDP）真实账号操作，作者实测 20 天从 0 粉涨到 1000+ 粉，且未触发风控
+- 🛠️ 推荐实现路径：
+  ```
+  1. 安装 OpenClaw 本体，配置 LLM API Key
+  2. 安装小红书 Skill：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
+  3. 扫码绑定小红书账号（仅需一次）
+  4. 下达自然语言指令，Agent 自动完成热点抓取 → 文案创作 → 定时发布
+  ```
+- ⚠️ 注意：控制操作频率，避免短时大量发布触发平台风控
+
+
+
 #### ⚖️ 法律智能体
+
+**ChatLaw（中文法律大模型，北京大学出品）**
+
+- 🔗 仓库地址：https://github.com/PKU-YuanGroup/ChatLaw
+- 🔗 论文地址：https://arxiv.org/abs/2306.16092
+- ⭐ GitHub Stars: 7k+
+- 💡 推荐理由：北大元语言团队出品，采用 MoE 混合专家模型 + 多智能体协作架构，内置四类 Agent 角色（信息收集、法律研究、法律建议、报告生成），在 LawBench 上以 60.08 分显著超越 GPT-4（52.35 分）。融合知识图谱与 9.3 万份判决书训练的相似度模型，是目前最完整的中文法律多 Agent 系统实现
+- 🎯 实战建议：跑通多 Agent 协作的离婚咨询 Demo，理解"信息收集 → 法规检索 → 生成咨询报告"的完整 SOP 流程
 
 #### 📈 金融智能体
 
+**FinGPT（开源金融大模型）**
+- 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinGPT
+- ⭐ GitHub Stars: 19k+
+- 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目
+
+**FinRobot（金融 Agent 平台，更推荐实战）**
+- 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinRobot
+- ⭐ GitHub Stars: 6k+
+- 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板
+
 #### 🏥 医疗健康助手
 
-
+**HuatuoGPT（华佗 GPT，中文医疗大模型）**
+- 🔗 仓库地址：https://github.com/FreedomIntelligence/HuatuoGPT
+- 🔗 在线 Demo：https://www.huatuogpt.cn/
+- ⭐ GitHub Stars: 1k+
+- 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM
+- 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计
