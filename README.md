@@ -402,3 +402,234 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 ---
 
+## 🤖 Stage 3: Agent
+
+完成 Stage 2 后，你已掌握 LLM 的训练、推理与部署。Stage 3 关注如何把模型放进**闭环**：感知 → 决策 → 行动 → 观察 → 更新状态，直至任务完成。
+
+**本阶段目标：** 从范式上区分「聊天模型」与「行动者」→ 掌握工具调用与记忆/RAG 的工程化组合 → 理解多智能体的协议、组织与环境 → 跟跑至少一个开源项目，并自选垂直场景深入。
+
+---
+
+### 一、理解 Agent：从 LLM 到行动者
+
+#### 1.1 Agent 的核心定义与能力边界
+
+**定义：**
+
+Agent = LLM（大脑） + 记忆 + 规划 + 工具使用。它能自主感知环境、做出决策并执行动作。
+
+**能力边界：**
+
+✅ 能：多步推理、调用外部工具、与用户/环境交互、利用长期记忆
+
+❌ 不能：完全自主的目标设定（仍需人类引导）、真正的理解与意识
+
+与普通 Chatbot 的区别：Chatbot 是被动响应，Agent 是主动规划与行动。
+
+**① 李宏毅：一堂课搞懂 AI Agent 的原理**
+
+- 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
+- 💡 推荐理由：建立 Agent 概念与问题设定，适合作为 agent 入门课程。
+
+**② Lilian Weng：LLM Powered Autonomous Agents（博文）**
+
+- 🔗 文章地址：https://lilianweng.github.io/posts/2023-06-23-agent/
+- 💡 推荐理由：从自主智能体、规划与工具等角度做系统梳理。
+
+**③ Agent 领域综述**
+
+- 🔗 论文地址：https://arxiv.org/pdf/2601.14192
+- 💡 推荐理由：长文综述类材料，可按目录选读，用于扩展视野。
+
+#### 1.2 Agent 的经典架构模式
+
+**① ReAct**
+
+- 🔗 论文地址：https://arxiv.org/abs/2210.03629  
+- 💡 重点理解：核心在于将**思维链（CoT）与动作（Action）**交替结合，形成“思考-行动-观察”的闭环。模型在每一步行动前先写出推理过程，这不仅提高了决策的透明度，还允许模型根据环境的实时观察动态修正后续的推理。
+
+**② Plan-and-Solve Prompting**
+
+- 🔗 论文地址：https://arxiv.org/abs/2305.04091  
+- 💡 重点理解：提出了“先全局规划，后分步执行”的策略。模型首先将复杂任务拆解为子任务列表，然后再逐一解决，显著提升了处理多步骤逻辑问题的稳定性与准确率。
+
+**③ Reflexion**
+
+- 🔗 论文地址：https://arxiv.org/abs/2303.11366  
+- 💡 重点理解：引入了自我反思机制，通过在外部环境中试错来获取语言反馈。模型将失败的尝试存储在短期记忆中，并在下一次迭代时根据这些“教训”修正策略，这种“自省”能力让 Agent 具备了在不更新参数的情况下进行自我优化的能力。
+---
+
+### 二、Agent 核心能力
+
+Agent 的本质是“系统”而非单一“模型”。 除了模型本身的推理能力外，系统侧的架构设计决定了 Agent 能否从“对话框”走向“生产力工具”。这主要涉及两个核心维度的工程闭环：一是工具调用，解决 Agent 权限受控、安全、稳态地操作外部环境的问题；二是记忆与上下文管理，解决信息在有限窗口内的流动策略，以及长短期知识的存储与检索。
+
+#### 2.1 工具调用
+
+**工具是什么：把外部能力封装成可调用的函数 / API**
+
+工具是 Agent 的“手脚”：搜索、计算器、访问数据库、发消息等。除了名字和说明要清楚，还要约定入参/出参、超时、重试、是否改数据、给多大权限。
+
+**① Anthropic：Writing Effective Tools for Agents**
+
+- 🔗 文档地址：https://www.anthropic.com/engineering/writing-effective-tools-for-agents
+- 💡 推荐理由：讲清工具名、说明与错误回传怎么写，模型才容易稳定、可恢复地调用。
+
+**② OpenAI：Function Calling 指南**
+
+- 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
+- 💡 推荐理由：结构化调用的行业常用约定，对应「自然语言如何变成 JSON 参数、运行时如何执行与回写」的闭环。
+
+**③ Model Context Protocol（MCP）**
+
+- 🔗 文档地址：https://modelcontextprotocol.io/introduction
+- 🔗 参考实现（官方 servers 仓库）：https://github.com/modelcontextprotocol/servers
+- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
+
+
+**代码示例（LangChain `tool`）**
+
+```python
+from langchain.tools import tool
+
+@tool
+def search(query: str) -> str:
+    """搜索实时信息"""
+    return f"搜索结果: {query}"
+```
+
+#### 2.2 记忆与上下文管理
+
+本节说明对话与外部知识如何进入模型、如何驻留：在系统提示、历史、工具返回与检索片段共同占用 token 的前提下，如何配置与裁剪上下文。随后讨论短期（工作）记忆、长期记忆与RAG技术。
+
+**短期（工作）记忆：**
+
+- 对话缓冲 / 滑动窗口：仅保留最近 k 轮对话或固定长度的 Token。实现最简单、延迟最低，但存在断层式遗忘，一旦信息超出窗口，Agent 将彻底丧失对早期指令的感知。
+- 摘要压缩：周期性把历史压成摘要再续聊，需注意摘要漂移与事实丢失，需警惕“摘要漂移”（多次摘要后细节走样）与核心事实丢失；通常建议采用“摘要 + 最近 n 轮原话”的混合方案。
+
+**长期记忆：**
+
+- 向量数据库 + 混合检索： 结合语义检索理解意图与关键词检索锁定专有名词。必须引入重排序步骤。初次检索保证“召回率”，重排序保证“准确率”，防止 Agent 被海量但不相关的知识片段干扰。
+- 结构化记忆： 用户偏好、任务状态机、会话级元数据存放在 DB / KV，而非全部塞进 prompt。 
+
+**RAG 技术（把外部知识“接进”推理）**
+
+**RAG**（Retrieval-Augmented Generation，检索增强生成）指：在回答前，先从文档、知识库、网页等语料里检索出与问题相关的若干片段，再与当前对话一起拼进提示，让模型在“有据可依”的上下文中生成。
+
+**推荐阅读：**
+
+**① Anthropic：Effective Context Engineering for AI Agents**
+
+- 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- 💡 推荐理由：介绍系统提示、工具、历史、MCP 等如何共同占满窗口，将「上下文」视为可组合、可取舍的配置。
+
+**② Claude-Mem**
+
+- 🔗 文档地址：https://docs.claude-mem.ai/introduction
+- 🔗 仓库地址：https://github.com/thedotmack/claude-mem
+- 💡 推荐理由：工程向的长期记忆/持久化参考，适合本地或自建部署时阅读。
+
+**③ Mem0（The Memory Layer for AI Agents）**
+
+- 🔗 仓库地址：https://github.com/mem0ai/mem0
+- ⭐ GitHub Stars: 以仓库页为准
+- 🔗 论文地址：https://arxiv.org/abs/2504.19413
+- 🔗 博客地址：https://get.mem.ai/blog
+- 💡 推荐理由：较常用的记忆层实现参考之一；可先读论文与博客了解动机与能力边界，再决定是否接入。
+
+
+**④ Agent Memory 综述（长文 PDF，选读）**
+
+- 🔗 论文地址：https://arxiv.org/pdf/2512.13564
+- 💡 推荐理由：可作为 agent memory 研究进展的补充阅读；具体以 arXiv 页面信息为准。
+
+
+**⑤ LangChain 文档：RAG**
+
+- 🔗 文档地址：https://docs.langchain.com/oss/python/langchain/rag
+- 💡 推荐理由：官方文档里从加载、切分、向量库到检索接模型的主线，适合动手搭第一条 RAG 链路。
+
+**⑥ LlamaIndex：生产环境 RAG 与优化**
+
+- 🔗 文档地址：https://developers.llamaindex.ai/python/framework/optimizing/production_rag/
+- 💡 推荐理由：索引、多路召回、重排等工程侧优化，适合在 baseline RAG 效果不足时对照排查。
+
+---
+
+### 三、多智能体系统原理
+
+#### 3.1 什么是多智能体系统：任务驱动协作、自治群体交互
+
+#### 3.2 智能体之间如何「说话」？——交互协议
+
+#### 3.3 智能体团队如何「组织」？——组织结构
+
+#### 3.4 智能体在什么「世界」里活动？——协作环境
+
+### 四、实战项目
+
+#### GUI Agent
+
+**Awesome-GUI-Agent**
+
+- 🔗 仓库地址：https://github.com/showlab/Awesome-GUI-Agent  
+- 🔗 论文地址：无单一项目论文；列表内按主题链接 GUI Agent 相关论文、数据集、基准与开源实现，可按图索骥阅读。  
+- ⭐ GitHub Stars: 1.2k+  
+- 💡 推荐理由：桌面/移动端多模态 GUI 导航、屏幕理解与操作类资源的**总索引**，适合建立领域地图、对比感知方案（纯视觉、DOM/可访问性树、混合）与典型评测；学习路径上建议作为「选方向 + 找论文/代码」的入口，而非单一代码库。  
+
+**MobileRun**
+
+- 🔗 仓库地址：https://github.com/droidrun/mobilerun  
+- ⭐ GitHub Stars: 8k+ 
+- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。  
+
+**UI-TARS**
+
+- 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
+- ⭐ GitHub Stars: 10k+ 
+- 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**主线仓库（含或指向 UI-TARS 系列模型与推理、强化学习后训练等说明），和「纯脚本点击」对读能看清 **VLM + 坐标签图 + 多环境任务** 的建模范式。若要做桌面/浏览器，可再关注同组织下的 *UI-TARS-desktop* 等派生项目。  
+
+**AgentCPM-GUI（OpenBMB，端侧 Android GUI Agent）**
+
+- 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
+- ⭐ GitHub Stars: 1.3k+（以仓库页为准）  
+- 💡 推荐理由：**端上**操作 Android 应用的 GUI 智能体路线，强调用**强化学习微调**等后训练提升推理与执行效率，与 OpenBMB 生态（如已有接触 ToolBench/ChatDev）衔接自然；适合和 MobileRun 对读「同一 Android 场景下不同训练与部署取舍」。  
+- 🎯 实战建议：先按 README 跑通官方任务或最小 demo，记录设备分辨率、无障碍与动作空间配置；再对照论文/技术报告中的**奖励设计与轨迹数据**是否可迁移到你自己的评测集。  
+
+#### Computer Use Agent
+
+**Browser Use**
+
+- 🔗 仓库地址：https://github.com/browser-use/browser-use   
+- ⭐ GitHub Stars: 90k+  
+- 💡 推荐理由：社区热度高、迭代快的**浏览器侧**自动化 Agent 框架，强调让模型在真实网页上规划与执行；适合与 Playwright/浏览器能力结合，做「多步打开网页、填表、采数」等落地形态。  
+
+**Anthropic Computer Use**
+
+- 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
+- ⭐ GitHub Stars: 16k+  
+- 💡 推荐理由：Anthropic 附带的**快速示例与脚手架**，便于在官方 Computer Use/视觉+键鼠范式下做最小可运行 demo；和「自己做浏览器环境」对读，能分清模型能力与客户端截图/控制协议分工。    
+
+#### DeepResearch Agent（多轮搜索 + 交叉验证 + 报告）
+
+**langchain-ai/open_deep_research**
+
+- 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
+- ⭐ GitHub Stars: 11k+  
+- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性看清「子研究 → 综合 → 报告」的模块切分时优先选它。  
+
+**dzhng/deep-research**
+
+- 🔗 仓库地址：https://github.com/dzhng/deep-research   
+- ⭐ GitHub Stars: 18k+  
+- 💡 推荐理由：单仓库体量相对克制，**代码路径短**，适合读清「多轮 query 生成、并发抓取、再汇总成 Markdown 报告」的主干逻辑，再迁移到自己的栈或做教学拆解。  
+
+
+#### 基于 OpenClaw 部署小红书自动运营
+
+#### 法律智能体
+
+#### 金融智能体
+
+#### 医疗健康助手
+
+
