@@ -754,63 +754,63 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 ### 🧪 四、实战项目
 
-#### 🖥️ GUI Agent 
+#### 4.1 🖥️ GUI Agent 
 
-**MobileRun**
+**① MobileRun**
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
 - 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。  
 
-**UI-TARS**
+**② UI-TARS**
 
 - 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
 - ⭐ GitHub Stars: 10k+ 
 - 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。与 MobileRun 相比更侧重模型能力（VLM + 强化学习微调），MobileRun 更侧重工程框架与真机部署。
 
-**AgentCPM-GUI**
+**③ AgentCPM-GUI**
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
 - 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行。与 MobileRun（云端多模型后端）和 UI-TARS（桌面/移动兼顾）相比，更适合端上隐私敏感场景与低延迟需求。  
 
-#### 🌐 Computer Use Agent
+#### 4.2 🌐 Computer Use Agent
 
-**Browser Use**
+**① Browser Use**
 
 - 🔗 仓库地址：https://github.com/browser-use/browser-use   
 - ⭐ GitHub Stars: 90k+  
 - 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持多标签页、表单填写、数据采集等网页操作。深度优化网页场景，适合批量网页自动化、自动化测试、信息抓取等落地需求。  
 
-**Anthropic Computer Use**
+**② Anthropic Computer Use**
 
 - 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
 - ⭐ GitHub Stars: 16k+  
 - 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。    
 
-#### 🔍 DeepResearch Agent
+#### 4.3 🔍 DeepResearch Agent
 
-**langchain-ai/open_deep_research**
+**① langchain-ai/open_deep_research**
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
 - 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。  
 
-**dzhng/deep-research**
+**② dzhng/deep-research**
 
 - 🔗 仓库地址：https://github.com/dzhng/deep-research   
 - ⭐ GitHub Stars: 18k+  
 - 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。  
 
 
-#### 🛍️ 基于 OpenClaw 部署小红书自动运营
+#### 4.4 🛍️ 基于 OpenClaw 部署小红书自动运营
 
-**OpenClaw**
+**① OpenClaw**
 - 🔗 仓库地址：https://github.com/openclaw/openclaw
 - ⭐ GitHub Stars: 360k+（GitHub 史上最快破记录的开源项目）
 - 💡 项目背景：由奥地利独立开发者 Peter Steinberger 于 2025 年 11 月发布，本地运行、全平台支持，通过 Skill 插件体系可扩展各类自动化能力，接入 Telegram / Feishu / WeChat 等 20+ 渠道，100 天内超过 Linux 和 React 成为 GitHub 最多 Star 的软件仓库。
 
-**xiaohongshu-ops-skill（OpenClaw 小红书运营插件）**
+**② xiaohongshu-ops-skill（OpenClaw 小红书运营插件）**
 - 🔗 仓库地址：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
 - ⭐ GitHub Stars: 600+
 - 💡 推荐理由：将 OpenClaw 变成小红书运营助手，支持"分析竞品 → 智能选题 → 生成文案 → 自动发布"全流程，基于浏览器自动化（CDP）真实账号操作，作者实测 20 天从 0 粉涨到 1000+ 粉，且未触发风控。
@@ -825,9 +825,9 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 
 
-#### ⚖️ 法律智能体
+#### 4.5 ⚖️ 法律智能体
 
-**ChatLaw**
+**① ChatLaw**
 
 - 🔗 仓库地址：https://github.com/PKU-YuanGroup/ChatLaw
 - 🔗 论文地址：https://arxiv.org/abs/2306.16092
@@ -835,21 +835,21 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 💡 推荐理由：北大元语言团队出品，采用 MoE 混合专家模型 + 多智能体协作架构，内置四类 Agent 角色（信息收集、法律研究、法律建议、报告生成），在 LawBench 上以 60.08 分显著超越 GPT-4（52.35 分）。融合知识图谱与 9.3 万份判决书训练的相似度模型，是目前最完整的中文法律多 Agent 系统实现。
 - 🎯 实战建议：跑通多 Agent 协作的离婚咨询 Demo，理解"信息收集 → 法规检索 → 生成咨询报告"的完整 SOP 流程。
 
-#### 📈 金融智能体
+#### 4.6 📈 金融智能体
 
-**FinGPT**
+**① FinGPT**
 - 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinGPT
 - ⭐ GitHub Stars: 19k+
 - 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目。
 
-**FinRobot（金融 Agent 平台，更推荐实战）**
+**② FinRobot（金融 Agent 平台，更推荐实战）**
 - 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinRobot
 - ⭐ GitHub Stars: 6k+
 - 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板。
 
-#### 🏥 医疗健康助手
+#### 4.7 🏥 医疗健康助手
 
-**HuatuoGPT**
+**① HuatuoGPT**
 - 🔗 仓库地址：https://github.com/FreedomIntelligence/HuatuoGPT
 - 🔗 在线 Demo：https://www.huatuogpt.cn/
 - ⭐ GitHub Stars: 1k+
