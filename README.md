@@ -24,11 +24,6 @@
 
 - **2026-04** - 项目启动，建立学习路线框架
 
----
-
-
-
-
 ## 📋 路线总览
 
 本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
@@ -43,6 +38,8 @@
 <img src="asset/image_route.png" alt="Slay the LLM Maze" width="820" />
 
 ---
+本项目分为精简版本和详细版本，供学习者根据时间精力来安排。
+
 <details>
 <summary><strong>精简版本</strong></summary>
 
@@ -182,11 +179,10 @@
 
 #### 🎬 1.2 视频讲解
 
-**Andrej Karpathy：Let's build GPT from scratch**
+**李宏毅：生成式 AI 时代下的机器学习（LLM 重点章节）**
 
-- 🔗 视频地址：https://www.youtube.com/watch?v=kCc8FmEb1nY
-- 🔗 配套代码：https://github.com/karpathy/nanoGPT
-- 💡 推荐理由：2 小时内从零手写一个 GPT，边写边讲原理，是目前最好的 Transformer 实践教程
+- 🔗 课程地址：https://www.youtube.com/playlist?list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J
+- 💡 推荐理由：中文讲解清晰，能够把 Transformer、预训练、对齐与生成式 AI 的整体脉络串起来，适合作为 Stage 2 的主线视频课。
 
 ---
 
@@ -787,6 +783,11 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 💡 推荐理由：全程配图讲解 Attention 的计算过程，是理解 Transformer 最友好的入门材料，建议与论文配合阅读
 
 #### 🎬 1.2 视频讲解
+
+**李宏毅：生成式 AI 时代下的机器学习（LLM 重点章节）**
+
+- 🔗 课程地址：https://www.youtube.com/playlist?list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J
+- 💡 推荐理由：中文讲解清晰，能够把 Transformer、预训练、对齐与生成式 AI 的整体脉络串起来，适合作为 Stage 2 的主线视频课。
 
 **Andrej Karpathy：Let's build GPT from scratch**
 
