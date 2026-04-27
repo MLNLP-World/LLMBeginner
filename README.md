@@ -859,7 +859,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 ### 👥 组织者
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/chenyuanTKCY">
     <img src="https://github.com/chenyuanTKCY.png" width="64" height="64" alt="chenyuanTKCY" />
   </a>
@@ -871,7 +871,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
   </a>
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/chenyuanTKCY">chenyuanTKCY</a> |
   <a href="https://github.com/ffcosmos">ffcosmos</a> |
   <a href="https://github.com/Nahtreom">Nahtreom</a>
