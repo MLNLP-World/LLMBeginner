@@ -103,7 +103,7 @@
 <details>
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
 
-> 补充材料：见 [stage1/supply.md](stage1/supply.md)
+<!-- > 补充材料：见 [stage1/supply.md](stage1/supply.md) -->
 
 ### 🟦 一、Deep Learning（深度学习）
 
@@ -336,7 +336,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 完成 Stage 2 后，你已掌握 LLM 的训练、推理与部署。Stage 3 关注如何把模型放进**闭环**：感知 → 决策 → 行动 → 观察 → 更新状态，直至任务完成。
 
 **本阶段目标：** 从范式上区“聊天模型”与“行动者”→ 掌握工具调用与记忆/RAG 的工程化组合 → 理解多智能体的协议、组织与环境 → 跟跑至少一个开源项目，并自选垂直场景深入。
-> 补充材料：见 [stage3/supply.md](stage3/supply.md)
+<!-- > 补充材料：见 [stage3/supply.md](stage3/supply.md) -->
 
 ---
 
