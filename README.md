@@ -174,10 +174,6 @@
 - 🔗 李沐精读视频：https://www.bilibili.com/video/BV1pu411o7BE
 - 💡 重点理解：Multi-Head Self-Attention、位置编码（Positional Encoding）、Encoder-Decoder 结构
 
-**② The Illustrated Transformer（最直观的图解）**
-
-- 🔗 文章地址：https://jalammar.github.io/illustrated-transformer/
-- 💡 推荐理由：全程配图讲解 Attention 的计算过程，是理解 Transformer 最友好的入门材料，建议与论文配合阅读
 
 #### 🎬 1.2 视频讲解
 
@@ -204,10 +200,6 @@
 - 🔗 论文地址：https://arxiv.org/abs/2001.08361
 - 💡 重点理解：为什么更大的模型 + 更多数据 = 更好的效果，以及如何用有限算力做出最优决策
 
-**② LLaMA 技术报告（工程实践参考）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2302.13971
-- 💡 推荐理由：Meta 开源模型的技术细节，展示了完整的预训练工程实践，包括数据配比、训练稳定性等问题的解决方案
 
 ---
 
@@ -231,10 +223,6 @@
 - 🔗 李沐精读视频：https://www.bilibili.com/video/BV1hd4y187CR
 - 💡 重点理解：三阶段训练流程（SFT → RM → PPO），以及为什么 RLHF 能显著提升模型有用性
 
-**② DPO 论文（更简洁的对齐方法）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2305.18290
-- 💡 推荐理由：绕过奖励模型，直接从偏好数据优化策略，是目前工业界最常用的对齐方案之一
 
 
 
@@ -258,16 +246,6 @@
 - 🔗 论文地址：https://arxiv.org/abs/2501.12948
 - 💡 重点理解：如何用 RL 训练模型生成高质量推理链，以及推理模型与传统 LLM 的训练差异
 
-**② Chain-of-Thought Prompting（思维链提示）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2201.11903
-- 💡 推荐理由：推理模型的理论基础，展示了"让模型一步步思考"如何显著提升复杂推理任务的表现
-
-**③ 代码实践：OpenR（开源推理模型训练框架）**
-
-- 🔗 仓库地址：https://github.com/openreasoner/openr
-- ⭐ GitHub Stars: 3k+
-- 💡 推荐理由：提供完整的推理模型训练 pipeline，包括推理数据生成、RL 训练等，是动手实践推理模型的最佳起点
 
 ---
 
@@ -303,11 +281,6 @@
 - 🔗 论文地址：https://arxiv.org/abs/2106.09685
 - 💡 核心思想：将权重更新分解为两个低秩矩阵的乘积，只训练约 0.1% 的参数量即可达到不错效果
 
-**② LLaMA-Factory（一站式微调框架）**
-
-- 🔗 仓库地址：https://github.com/hiyouga/LLaMA-Factory
-- ⭐ GitHub Stars: 40k+
-- 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛
 
 
 
@@ -343,16 +316,6 @@
 - 🔗 论文地址：https://arxiv.org/abs/2103.00020
 - 💡 重点理解：对比学习如何让图像和文本在同一空间对齐，这是多模态模型的底层基础
 
-**② LLaVA（最具影响力的开源多模态模型）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2304.08485
-- 🔗 李沐精读视频：https://www.bilibili.com/video/BV1iN411r7ma
-- 💡 推荐理由：结构简洁（CLIP + Projector + LLaMA），用指令微调实现视觉问答，是理解多模态 LLM 架构的最佳入门论文
-
-**③ Qwen-VL 技术报告（工程实践参考）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2308.12966
-- 💡 推荐理由：详细描述了一个完整的多模态模型训练流程，包括多阶段训练策略和数据配比，适合工程落地参考
 
 #### 💻 6.2 代码实践
 
@@ -395,15 +358,6 @@
 - 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
-**② Lilian Weng：LLM Powered Autonomous Agents（博文）**
-
-- 🔗 文章地址：https://lilianweng.github.io/posts/2023-06-23-agent/
-- 💡 推荐理由：全面解析 LLM Agent 的设计范式与关键技术，配有丰富的案例分析，是理解 LLM Agent 架构设计的优质参考。
-
-**③ Agent 领域综述**
-
-- 🔗 论文地址：https://arxiv.org/pdf/2309.07864
-- 💡 推荐理由：长文综述类材料，可按目录选读，用于扩展视野。
 
 #### 🔀 1.2 Agent 的经典架构模式
 
@@ -412,15 +366,6 @@
 - 🔗 论文地址：https://arxiv.org/pdf/2210.03629
 - 💡 重点理解：核心在于将思维链与动作交替结合，形成“思考-行动-观察”的闭环。模型在每一步行动前先写出推理过程，这不仅提高了决策的透明度，还允许模型根据环境的实时观察动态修正后续的推理。
 
-**② Plan-and-Solve Prompting**
-
-- 🔗 论文地址：https://arxiv.org/pdf/2305.04091 
-- 💡 重点理解：提出了“先全局规划，后分步执行”的策略。模型首先将复杂任务拆解为子任务列表，然后再逐一解决，显著提升了处理多步骤逻辑问题的稳定性与准确率。
-
-**③ Reflexion**
-
-- 🔗 论文地址：https://arxiv.org/pdf/2303.11366   
-- 💡 重点理解：引入了自我反思机制，通过在外部环境中试错来获取语言反馈。模型将失败的尝试存储在短期记忆中，并在下一次迭代时根据这些“教训”修正策略，这种“自省”能力让 Agent 具备了在不更新参数的情况下进行自我优化的能力。
 ---
 
 ### ⚙️ 二、Agent 核心能力
@@ -438,21 +383,6 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
 - 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
 
-**② Anthropic：Tool Use 概览**
-
-- 🔗 文档地址：https://docs.anthropic.com/claude/docs/tool-use
-- 💡 推荐理由：介绍 Client/Server 工具的执行模式、Agent 循环的工作机制，以及工具调用的流程，适合理解工具集成的核心概念与实现路径。
-
-**③ Model Context Protocol（MCP）**
-
-- 🔗 文档地址：https://modelcontextprotocol.io/introduction
-- 🔗 参考实现：https://github.com/modelcontextprotocol/servers
-- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
-
-**④ Agent Skills with Anthropic**
-
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
-- 💡 推荐理由：学习用开放标准构建可复用的智能体技能，掌握将技能、MCP 与子智能体组合的方法，搭建能访问外部数据、具备专业知识的强大的智能体系统。
 
 #### 🧠 2.2 记忆与上下文管理
 
@@ -479,31 +409,6 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 - 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
 
-**② Claude-Mem**
-
-- 🔗 文档地址：https://docs.claude-mem.ai/introduction
-- 🔗 仓库地址：https://github.com/thedotmack/claude-mem
-- 💡 推荐理由：工程向的长期记忆/持久化参考，适合自建部署时阅读。
-
-**③ Mem0（The Memory Layer for AI Agents）**
-
-- 🔗 仓库地址：https://github.com/mem0ai/mem0
-- ⭐ GitHub Stars: 54k+
-- 🔗 论文地址：https://arxiv.org/pdf/2504.19413
-- 🔗 博客地址：https://get.mem.ai/blog
-- 💡 推荐理由：较常用的记忆层实现参考之一；可先读论文与博客了解动机与能力边界，再决定是否接入。
-
-
-**④ Agent Memory 综述（长文 PDF，选读）**
-
-- 🔗 论文地址：https://arxiv.org/pdf/2512.13564
-- 💡 推荐理由：可作为 agent memory 研究进展的补充阅读。
-
-
-**⑤ LangChain 文档：RAG**
-
-- 🔗 文档地址：https://docs.langchain.com/oss/python/langchain/rag
-- 💡 推荐理由：官方文档里从加载、切分、向量库到检索接模型的主线，适合动手搭第一条 RAG 链路。
 
 ---
 
@@ -686,17 +591,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 8k+ 
 - 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。  
 
-**② UI-TARS**
-
-- 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
-- ⭐ GitHub Stars: 10k+ 
-- 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。与 MobileRun 相比更侧重模型能力（VLM + 强化学习微调），MobileRun 更侧重工程框架与真机部署。
-
-**③ AgentCPM-GUI**
-
-- 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
-- ⭐ GitHub Stars: 1.4k+ 
-- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行。与 MobileRun（云端多模型后端）和 UI-TARS（桌面/移动兼顾）相比，更适合端上隐私敏感场景与低延迟需求。  
 
 #### 4.2 🌐 Computer Use Agent
 
@@ -706,11 +600,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 90k+  
 - 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持多标签页、表单填写、数据采集等网页操作。深度优化网页场景，适合批量网页自动化、自动化测试、信息抓取等落地需求。  
 
-**② Anthropic Computer Use**
-
-- 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
-- ⭐ GitHub Stars: 16k+  
-- 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。    
 
 #### 4.3 🔍 DeepResearch Agent
 
@@ -720,11 +609,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 11k+  
 - 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。  
 
-**② dzhng/deep-research**
-
-- 🔗 仓库地址：https://github.com/dzhng/deep-research   
-- ⭐ GitHub Stars: 18k+  
-- 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。  
 
 
 #### 4.4 🛍️ 基于 OpenClaw 部署小红书自动运营
@@ -766,10 +650,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 19k+
 - 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目。
 
-**② FinRobot（金融 Agent 平台，更推荐实战）**
-- 🔗 仓库地址：https://github.com/AI4Finance-Foundation/FinRobot
-- ⭐ GitHub Stars: 6k+
-- 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板。
 
 #### 4.7 🏥 医疗健康助手
 
