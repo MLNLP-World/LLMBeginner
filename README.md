@@ -100,6 +100,7 @@
 
 <details>
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
+
 > 补充材料：见 [stage1/supply.md](stage1/supply.md)
 
 ### 🟦 一、Deep Learning（深度学习）
