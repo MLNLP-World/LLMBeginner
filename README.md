@@ -3,11 +3,11 @@
 <img src="asset/image.png" alt="Slay the LLM Maze" width="320" />
 
 # 零基础通关 LLM 的项目式学习路线
-![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
-![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/Slay-the-LLM-Maze?style=social)
-![License](https://img.shields.io/github/license/chenyuanTKCY/Slay-the-LLM-Maze)
-![Last Commit](https://img.shields.io/github/last-commit/chenyuanTKCY/Slay-the-LLM-Maze)
+![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/LLMBeginner?style=social)
+![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/LLMBeginner?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/LLMBeginner?style=social)
+![License](https://img.shields.io/github/license/chenyuanTKCY/LLMBeginner)
+![Last Commit](https://img.shields.io/github/last-commit/chenyuanTKCY/LLMBeginner)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ![Awesome](https://awesome.re/badge.svg)
 > 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。整体内容采用分阶段设计，从 Big Picture 到底层机制，再到项目实践与系统搭建，力求路径清晰、节奏可控，帮助学习者逐步建立较为完整的认知与动手能力 🚀
@@ -41,11 +41,13 @@
 
 ---
 
-## 🗺️ Stage 0: Big Picture
+<details>
+<summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
 
 在开始学习任何技术细节之前，先建立对整个 LLM 领域的全局认知至关重要。很多初学者容易陷入"学了很多，但不知道自己在哪里"的困境——Stage 0 就是为了避免这种迷失。
 
 **本阶段目标：** 理解 LLM 的来龙去脉、主流技术路线、以及你自己的学习路径，产出一份个人学习计划。
+> 补充材料：见 [stage0/supply.md](stage0/supply.md)
 
 ### 🧭 0.1 理解 LLM 的全貌
 
@@ -78,10 +80,6 @@
 - 🔗 视频地址：https://space.bilibili.com/1567748478/lists?sid=32139
 - 💡 推荐理由：逐行精读 Transformer、BERT、GPT 等奠基论文，帮助你建立"读论文"的能力，这是 LLM 研究者的核心技能
 
-**② Andrej Karpathy：Neural Networks: Zero to Hero**
-
-- 🔗 视频地址：https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
-- 💡 推荐理由：从最基础的神经网络一路讲到 GPT，是目前最好的 LLM 入门叙事线，强烈建议作为 Stage 0 的压轴内容
 
 ### 🎯 0.3 制定你的个人学习计划
 
@@ -98,7 +96,11 @@
 > 💬 建议：把你的学习计划写成一个 Markdown 文件放在本地仓库的专用文件夹，定期回顾和更新。
 
 
-## 📚 Stage 1: DL + RL 基础
+</details>
+
+<details>
+<summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
+> 补充材料：见 [stage1/supply.md](stage1/supply.md)
 
 ### 🟦 一、Deep Learning（深度学习）
 
@@ -112,11 +114,6 @@
 - 📒 配套笔记：https://github.com/MLNLP-World/Deep_Learning_Notes
 - 💡 推荐理由：系统性强，适合建立完整的深度学习知识体系
 
-**② 李沐：动手学深度学习**
-
-- 🔗 课程链接：https://space.bilibili.com/1567748478/lists?sid=358497
-- 📒 配套笔记：https://github.com/MLNLP-World/Deep_Learning_Notes
-- 💡 推荐理由：理论与代码结合紧密，注重动手实践
 
 #### 💻 1.2 代码学习
 
@@ -126,10 +123,6 @@
 - ⭐ GitHub Stars: 66k+
 - 💡 特点：论文逐行注释讲解，适合深入理解 Transformer、GPT 等模型实现细节
 
-**② 可视化学习网站**
-
-- 🔗 网站地址：https://nn.labml.ai/
-- 💡 推荐理由：代码与解释同步展示，交互式体验，非常适合初学者直观理解模型结构
 
 ---
 
@@ -145,15 +138,6 @@
 - 📒 配套笔记：https://github.com/MLNLP-World/Reinforcement-Learning-Comic-Notes/
 - 💡 推荐理由：以漫画形式讲解 RL 核心概念，零基础友好，大幅降低入门门槛
 
-**② 李宏毅：强化学习课程**
-
-- 🔗 课程链接：https://www.bilibili.com/video/BV1XP4y1d7Bk
-- 💡 推荐理由：中文讲解清晰，善用直观类比，适合快速建立 RL 整体认知
-
-**③ 王树森：深度强化学习（DRL）**
-
-- 🔗 课程链接：https://www.bilibili.com/video/BV12o4y197US
-- 💡 推荐理由：史蒂文斯理工学院王树森博士主讲，语言简洁有力，抛弃繁琐的数学推导，直接给出直观易懂的结论，初学者能在短时间内快速建立 DRL 整体体系认知
 
 #### 💻 2.2 代码学习
 
@@ -162,18 +146,18 @@
 - 🔗 仓库地址：https://github.com/boyu-ai/Hands-on-RL
 - 💡 推荐理由：配套教材《动手学强化学习》，从基础算法（Q-Learning）到 PPO 逐步实现，代码简洁，适合边学理论边写代码
 
-**② easy-rl（强化学习中文教程）**
-
-- 🔗 仓库地址：https://github.com/datawhalechina/easy-rl
-- 💡 推荐理由：Datawhale 出品，中文注释详细，覆盖主流 RL 算法实现，社区活跃，适合中文学习者系统入门
 
 ---
 
-## 🤖 Stage 2: LLM
+</details>
+
+<details>
+<summary><strong>🤖 Stage 2: LLM</strong></summary>
 
 完成 Stage 1 后，你已具备深度学习与强化学习的基础。Stage 2 的目标是真正理解 LLM 的内部机制，并亲手构建和训练一个语言模型。
 
 **本阶段目标：** 掌握 Transformer 架构原理 → 理解预训练与后训练方法 → 掌握推理模型 → 从零实现小型 LLM → 在真实大模型上做微调实战 → 拓展到多模态。
+> 补充材料：见 [stage2/supply.md](stage2/supply.md)
 
 ---
 
@@ -296,20 +280,6 @@
 - ⭐ GitHub Stars: 40k+
 - 💡 推荐理由：Karpathy 出品，约 300 行核心代码实现完整 GPT 训练，可在单张 GPU 上跑通，是从零实现 LLM 的最佳模板
 
-**② minimind（中文小模型全流程实现）**
-
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind 
-https://github.com/jingyaogong/minimind-v (多模态版本)
-- ⭐ GitHub Stars: 20k+
-- 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline
-
-**③ LLM-from-scratch （从零实现大模型功能拆解讲述）**
-
-- 🔗 中文翻译版本仓库地址：https://github.com/MLNLP-World/LLMs-from-scratch-CN
-- ⭐ GitHub Stars: 2k+
-- 🔗 原仓库地址：https://github.com/rasbt/LLMs-from-scratch
-- ⭐ GitHub Stars: 91k+
-- 💡 推荐理由：不仅关注 LLMs 的基础构建，如 Transformer 架构、序列建模 等，还深入探索了 GPT、BERT 等深度学习模型 的底层实现。项目中的每一部分均配备详细的代码实现和学习资源，帮助学习者从零开始构建 LLMs，全面掌握其核心技术。
 
 **推荐学习顺序：**
 
@@ -339,11 +309,6 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 - 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛
 
 
-**③ veRL（大规模 RLHF 训练框架）**
-
-- 🔗 仓库地址：https://github.com/volcengine/verl
-- ⭐ GitHub Stars: 8k+
-- 💡 推荐理由：字节跳动开源的分布式 RLHF 训练框架，支持 PPO / GRPO 等算法，与 HuggingFace 生态无缝集成，是目前在真实大模型上做 RLHF 实验的最佳选择之一
 
 #### 5.2 推理与部署
 
@@ -352,11 +317,6 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 - 🔗 官网地址：https://ollama.com/
 - 💡 推荐理由：一行命令在本地运行 LLaMA、Qwen 等模型，适合快速体验和调试
 
-**② vLLM（高性能推理框架）**
-
-- 🔗 仓库地址：https://github.com/vllm-project/vllm
-- ⭐ GitHub Stars: 45k+
-- 💡 推荐理由：基于 PagedAttention 技术，大幅提升推理吞吐量，是目前生产环境部署 LLM 的主流选择
 
 ---
 
@@ -403,11 +363,15 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 ---
 
-## 🧩 Stage 3: Agent
+</details>
+
+<details>
+<summary><strong>🧩 Stage 3: Agent</strong></summary>
 
 完成 Stage 2 后，你已掌握 LLM 的训练、推理与部署。Stage 3 关注如何把模型放进**闭环**：感知 → 决策 → 行动 → 观察 → 更新状态，直至任务完成。
 
 **本阶段目标：** 从范式上区“聊天模型”与“行动者”→ 掌握工具调用与记忆/RAG 的工程化组合 → 理解多智能体的协议、组织与环境 → 跟跑至少一个开源项目，并自选垂直场景深入。
+> 补充材料：见 [stage3/supply.md](stage3/supply.md)
 
 ---
 
@@ -566,10 +530,6 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
 - 💡 推荐理由：介绍多 Agent 的核心概念与应用场景
   
-**② HuggingFace Agents Course（系统入门首选）**
-
-- 🔗 课程地址：https://huggingface.co/learn/agents-course/
-- 💡 推荐理由：HuggingFace 官方出品，从单 Agent 基础到多 Agent 协作循序渐进，配有可直接运行的代码实践，是目前最完整的开源 Agent 入门课程
 
 **代表系统精读：**
 
@@ -580,23 +540,8 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - ⭐ GitHub Stars: 32k+
 - 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接
 
-**② Generative Agents：斯坦福小镇（自治群体交互）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2304.03442
-- 💡 重点理解：25 个 Agent 在模拟小镇中自主生活、社交、形成记忆，展示了 LLM 驱动的群体涌现行为。核心机制：记忆流（Memory Stream）+ 反思（Reflection）+ 行动规划（Planning）
 
 
-**延伸阅读：**
-
-**① A Survey on LLM-based Autonomous Agents（全景综述）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2308.11432
-- 💡 推荐理由：全面梳理 LLM Agent 的记忆、规划、工具使用与多 Agent 协作四大模块，适合在深入某个方向前建立完整的认知框架
-
-**② Large Language Model based Multi-Agents: A Survey of Progress and Challenges（多智能体专项综述）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2402.01680
-- 💡 推荐理由：专注于多 Agent 系统本身，系统梳理 LLM 驱动的多 Agent 在通信、组织、环境与应用上的最新进展与挑战
 
 #### 📡 3.2 智能体之间如何「说话」？——交互协议
 
@@ -647,12 +592,6 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - ⭐ GitHub Stars: 57k+
 - 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一
 
-**② CAMEL（角色扮演的多 Agent 通信范式）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2303.17760
-- 🔗 仓库地址：https://github.com/camel-ai/camel
-- ⭐ GitHub Stars: 16k+
-- 💡 推荐理由：最早系统研究 LLM Agent 间角色扮演通信的论文，提出用"任务指定 Agent"驱动"执行 Agent"的双 Agent 通信范式，是理解 Agent 对话如何被设计的经典入门文献
 
 #### 🏛️ 3.3 智能体团队如何「组织」？——组织结构
 
@@ -698,18 +637,6 @@ Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误�
 - ⭐ GitHub Stars: 49k+
 - 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用
 
-**② LangGraph（基于图结构的 Agent 编排）**
-
-- 🔗 仓库地址：https://github.com/langchain-ai/langgraph
-- ⭐ GitHub Stars: 30k+
-- 💡 推荐理由：将 Agent 协作流程建模为有向图（节点 = Agent/工具，边 = 消息流），支持条件分支、循环、并行执行，适合需要精确控制流程的复杂 MAS 场景
-
-**③ MetaGPT（将公司 SOP 编码为 Agent 协作规范）**
-
-- 🔗 论文地址：https://arxiv.org/abs/2308.00352
-- 🔗 仓库地址：https://github.com/geekan/MetaGPT
-- ⭐ GitHub Stars: 67k+
-- 💡 推荐理由：将软件公司的标准操作流程（SOP）嵌入 Agent 角色定义，产品经理 → 架构师 → 工程师 → QA 的流水线协作，是"流水线式组织结构"最典型的实现，也是 GitHub 上最受关注的多 Agent 框架之一
 
 #### 🌍 3.4 智能体在什么「世界」里活动？——协作环境
 
@@ -745,11 +672,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 5k+
 - 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"
 
-**② MultiAgentBench**
-
-- 🔗 论文地址：https://arxiv.org/abs/2503.01935
-- 🔗 仓库地址：https://github.com/ulab-uiuc/MARBLE
-- 💡 推荐理由：MultiAgentBench 是一个模块化且可扩展的架构，支持开发者快速构建、测试和评估多智能体系统。它通过统一的 API 管理智能体间的通讯、共享内存和环境交互。
 
 
 
@@ -856,6 +778,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 1k+
 - 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM。
 - 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计。
+
+</details>
 
 ### 👥 组织者
 
