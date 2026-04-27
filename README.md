@@ -80,7 +80,7 @@
 **李沐精读论文系列**
 
 - 🔗 视频地址：https://space.bilibili.com/1567748478/lists?sid=32139
-- 💡 推荐理由：逐行精读 Transformer、BERT、GPT 等奠基论文，帮助你建立"读论文"的能力，这是 LLM 研究者的核心技能
+- 💡 推荐理由：逐行精读 Transformer、BERT、GPT 等奠基论文，帮助你建立"读论文"的能力，这是 LLM 研究者的核心技能。
 
 
 ### 🎯 0.3 制定你的个人学习计划
@@ -115,7 +115,7 @@
 
 - 🔗 课程链接：https://www.bilibili.com/video/BV1FT4y1E74V/
 - 📒 配套笔记：https://github.com/MLNLP-World/Deep_Learning_Notes
-- 💡 推荐理由：系统性强，适合建立完整的深度学习知识体系
+- 💡 推荐理由：系统性强，适合建立完整的深度学习知识体系。
 
 
 #### 💻 1.2 代码学习
@@ -139,7 +139,7 @@
 
 - 🔗 课程链接：https://space.bilibili.com/399855081/lists/4452634?type=series
 - 📒 配套笔记：https://github.com/MLNLP-World/Reinforcement-Learning-Comic-Notes/
-- 💡 推荐理由：以漫画形式讲解 RL 核心概念，零基础友好，大幅降低入门门槛
+- 💡 推荐理由：以漫画形式讲解 RL 核心概念，零基础友好，大幅降低入门门槛。
 
 
 #### 💻 2.2 代码学习
@@ -257,10 +257,9 @@
 
 **minimind**
 
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind 
-https://github.com/jingyaogong/minimind-v (多模态版本)
+- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v（多模态版本）
 - ⭐ GitHub Stars: 20k+
-- 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline
+- 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline。
 
 **推荐学习顺序：**
 
@@ -280,7 +279,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 仓库地址：https://github.com/hiyouga/LLaMA-Factory
 - ⭐ GitHub Stars: 40k+
-- 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛
+- 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛。
 
 
 
@@ -290,7 +289,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 **Ollama（本地运行大模型最简单的方式）**
 
 - 🔗 官网地址：https://ollama.com/
-- 💡 推荐理由：一行命令在本地运行 LLaMA、Qwen 等模型，适合快速体验和调试
+- 💡 推荐理由：一行命令在本地运行 LLaMA、Qwen 等模型，适合快速体验和调试。
 
 
 ---
@@ -324,7 +323,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 仓库地址：https://github.com/haotian-liu/LLaVA
 - ⭐ GitHub Stars: 22k+
-- 💡 推荐理由：代码结构清晰，支持自定义数据集微调，是动手实践多模态模型的最佳起点
+- 💡 推荐理由：代码结构清晰，支持自定义数据集微调，是动手实践多模态模型的最佳起点。
 
 ---
 
@@ -344,7 +343,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** Agent = LLM（大脑） + 记忆 + 规划 + 工具使用。它能自主感知环境、做出决策并执行动作。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
 
 **与普通 Chatbot 的区别：** Chatbot 是被动响应，Agent 是主动规划与行动。
 
@@ -360,20 +359,64 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
 
-#### 🔀 1.2 Agent 的经典架构模式
+### ⚙️ 二、Agent 核心能力
 
-**ReAct**
+Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而系统架构决定 Agent 能否从“对话”走向“行动”。这涉及三个核心能力——规划、记忆和工具调用。
+
+**规划 (Planning)**：决定任务如何分解、执行顺序如何安排、遇到错误如何调整。包括任务分解（将复杂目标拆分为可执行的子任务链）、动态规划（ReAct 模式的推理-行动-观察循环）和自我反思（从失败中学习并优化策略）。
+
+**记忆 (Memory)**：管理信息的存储与检索。短期（工作）记忆利用上下文窗口记录当前对话状态；长期记忆通过向量数据库存储历史经验或专业知识，随取随用。
+
+**工具调用 (Tool Use)**：让 Agent 能操作外部环境。通过 API 调用搜索引擎、运行代码、访问数据库等，需要约定清晰的接口规范、权限控制和错误处理机制。
+
+#### 🎯 2.1 规划与推理
+
+规划（Planning）是 Agent 的“大脑”，决定任务如何分解、执行顺序如何安排、遇到错误如何调整。好的规划能力让 Agent 从单次响应走向多步迭代，从被动执行走向主动优化。
+
+**任务分解：**
+
+将复杂目标拆分为可管理的子任务链。例如“帮我写一篇行业分析报告”可分解为：确定主题→搜集资料→整理大纲→撰写各章节→审核修改。每个子任务有明确的输入、输出和验收标准，便于 Agent 逐一执行和检查进度。
+
+**动态规划与反思：**
+
+- **ReAct 模式**：推理（Reasoning）→ 行动（Action）→ 观察（Observation）→ 再推理的循环。Agent 在每一步行动前先思考“我需要做什么”，执行后观察结果，再决定下一步。这种思考-行动-反馈的闭环让 Agent 能根据环境反馈调整策略。
+
+- **自我反思（Self-Reflection）**：当行动结果不达标或出现错误时，Agent 能分析失败原因、总结教训并调整后续计划。Reflexion 等框架通过将失败经验存入记忆，让 Agent 在类似场景下避免重复犯错。
+
+**推荐阅读：**
+
+**① ReAct**
 
 - 🔗 论文地址：https://arxiv.org/pdf/2210.03629
 - 💡 重点理解：核心在于将思维链与动作交替结合，形成“思考-行动-观察”的闭环。模型在每一步行动前先写出推理过程，这不仅提高了决策的透明度，还允许模型根据环境的实时观察动态修正后续的推理。
 
----
+#### 🧠 2.2 记忆与上下文管理
 
-### ⚙️ 二、Agent 核心能力
+本节探讨 Agent 如何管理信息的存储与流动：短期（工作）记忆关注在有限上下文窗口内如何保留关键信息，长期记忆解决跨会话的知识持久化与检索，RAG 则负责将外部知识库实时接入推理过程。
 
-Agent 的本质是“系统”而非“模型”。模型提供推理能力，而系统架构决定 Agent 能否从“对话”走向“行动”。这涉及两个核心能力：一是工具调用，让 Agent 能安全、可靠地操作外部环境；二是记忆与上下文管理，让信息在长短期存储与有限窗口间高效流动。
+**短期（工作）记忆：**
 
-#### 🔧 2.1 工具调用
+上下文窗口有限，只能保留最近的对话。常用策略：
+- **滑动窗口**：仅保留最近 k 轮或固定长度 Token。实现最简单，但超出窗口的早期信息会彻底丢失。
+- **摘要压缩**：周期性将历史压缩为摘要再继续。多次压缩可能导致细节失真。
+
+**长期记忆：**
+
+- 语义检索 + 重排序：将文档等知识转为向量存入数据库，检索时先用语义相似度召回候选片段，再用重排序模型精选最相关的内容。解决“如何从海量知识中找到当前问题真正需要的片段”。
+- 结构化存储：将用户画像、任务状态、会话上下文等以结构化形式（如 JSON、数据库记录）持久化存储，随需读取。解决“跨会话记住用户偏好和应用状态”。 
+
+**RAG 技术（检索增强生成）：**
+
+- 推理时实时从外部知识库（文档、网页、数据库等）检索最相关的片段，再交给模型生成答案。这样模型既能利用实时/私有知识，又不受训练数据截止日期限制。
+
+**推荐阅读：**
+
+**Anthropic：Effective Context Engineering for AI Agents**
+
+- 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
+
+#### 🔧 2.3 工具调用
 
 **工具是什么：把外部能力封装成可调用的函数**
 
@@ -383,33 +426,6 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
 - 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
-
-
-#### 🧠 2.2 记忆与上下文管理
-
-本节说明对话与外部知识如何进入模型、如何驻留：在系统提示、历史、工具返回与检索片段共同占用 token 的前提下，如何配置与裁剪上下文。随后讨论短期（工作）记忆、长期记忆与RAG技术。
-
-**短期（工作）记忆：**
-
-- 对话缓冲 / 滑动窗口：仅保留最近 k 轮对话或固定长度的 Token。实现最简单、延迟最低，但存在断层式遗忘问题，一旦信息超出窗口，Agent 将失去对早期指令的感知。
-- 摘要压缩：周期性地将历史对话压缩为摘要，再继续对话。多次压缩可能导致细节失真和关键信息丢失，建议采用“摘要 + 最近 n 轮原话”的混合方案，兼顾效率与准确性。
-
-**长期记忆：**
-
-- 向量数据库 + 混合检索： 结合语义检索理解意图与关键词检索锁定专有名词。引入重排序步骤。初次检索保证“召回率”，重排序保证“准确率”，防止 Agent 被海量但不相关的知识片段干扰。
-- 结构化记忆： 用户偏好、任务状态机、会话级元数据存放在 DB / KV，而非全部塞进 prompt。 
-
-**RAG 技术：**
-
-- **RAG**（Retrieval-Augmented Generation，检索增强生成）指：在回答前，先从文档、知识库、网页等语料里检索出与问题相关的若干片段，再与当前对话一起拼进提示，让模型在“有据可依”的上下文中生成。
-
-**推荐阅读：**
-
-**Anthropic：Effective Context Engineering for AI Agents**
-
-- 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-- 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
-
 
 ---
 
@@ -435,7 +451,7 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 **吴恩达：多智能体系统入门介绍**
 
 - 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
-- 💡 推荐理由：介绍多 Agent 的核心概念与应用场景
+- 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 
 **代表系统精读：**
@@ -488,7 +504,7 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 **DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
 
 - 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程
+- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
 
 **推荐阅读：**
 
@@ -533,7 +549,7 @@ Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误�
 **DeepLearning.AI：Multi AI Agent Systems with crewAI**
 
 - 🔗 课程地址：https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
-- 💡 推荐理由：crewAI 作者主讲，从层级式到流水线式手把手搭建多 Agent 系统，是理解 Agent 团队组织方式最直观的实战课程
+- 💡 推荐理由：crewAI 作者主讲，从层级式到流水线式手把手搭建多 Agent 系统，是理解 Agent 团队组织方式最直观的实战课程。
 
 
 **推荐阅读：**
@@ -542,7 +558,7 @@ Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误�
 
 - 🔗 仓库地址：https://github.com/crewAIInc/crewAI
 - ⭐ GitHub Stars: 49k+
-- 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用
+- 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用。
 
 
 #### 🌍 3.4 智能体在什么「世界」里活动？——协作环境
@@ -577,7 +593,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 🔗 论文地址：https://arxiv.org/abs/2308.10848
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentVerse
 - ⭐ GitHub Stars: 5k+
-- 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"
+- 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"。
 
 
 
@@ -590,7 +606,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。  
+- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
 
 
 
@@ -600,7 +616,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。  
+- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 
 
@@ -659,12 +675,12 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **① 李沐精读论文系列（必看）**
 
 - 🔗 视频地址：https://space.bilibili.com/1567748478/lists?sid=32139
-- 💡 推荐理由：逐行精读 Transformer、BERT、GPT 等奠基论文，帮助你建立"读论文"的能力，这是 LLM 研究者的核心技能
+- 💡 推荐理由：逐行精读 Transformer、BERT、GPT 等奠基论文，帮助你建立"读论文"的能力，这是 LLM 研究者的核心技能。
 
 **② Andrej Karpathy：Neural Networks: Zero to Hero**
 
 - 🔗 视频地址：https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
-- 💡 推荐理由：从最基础的神经网络一路讲到 GPT，是目前最好的 LLM 入门叙事线，强烈建议作为 Stage 0 的压轴内容
+- 💡 推荐理由：从最基础的神经网络一路讲到 GPT，是目前最好的 LLM 入门叙事线，强烈建议作为 Stage 0 的压轴内容。
 
 ### 🎯 0.3 制定你的个人学习计划
 
@@ -696,13 +712,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 课程链接：https://www.bilibili.com/video/BV1FT4y1E74V/
 - 📒 配套笔记：https://github.com/MLNLP-World/Deep_Learning_Notes
-- 💡 推荐理由：系统性强，适合建立完整的深度学习知识体系
+- 💡 推荐理由：系统性强，适合建立完整的深度学习知识体系。
 
 **② 李沐：动手学深度学习**
 
 - 🔗 课程链接：https://space.bilibili.com/1567748478/lists?sid=358497
 - 📒 配套笔记：https://github.com/MLNLP-World/Deep_Learning_Notes
-- 💡 推荐理由：理论与代码结合紧密，注重动手实践
+- 💡 推荐理由：理论与代码结合紧密，注重动手实践。
 
 #### 💻 1.2 代码学习
 
@@ -715,7 +731,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **② 可视化学习网站**
 
 - 🔗 网站地址：https://nn.labml.ai/
-- 💡 推荐理由：代码与解释同步展示，交互式体验，非常适合初学者直观理解模型结构
+- 💡 推荐理由：代码与解释同步展示，交互式体验，非常适合初学者直观理解模型结构。
 
 ---
 
@@ -729,17 +745,17 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 课程链接：https://space.bilibili.com/399855081/lists/4452634?type=series
 - 📒 配套笔记：https://github.com/MLNLP-World/Reinforcement-Learning-Comic-Notes/
-- 💡 推荐理由：以漫画形式讲解 RL 核心概念，零基础友好，大幅降低入门门槛
+- 💡 推荐理由：以漫画形式讲解 RL 核心概念，零基础友好，大幅降低入门门槛。
 
 **② 李宏毅：强化学习课程**
 
 - 🔗 课程链接：https://www.bilibili.com/video/BV1XP4y1d7Bk
-- 💡 推荐理由：中文讲解清晰，善用直观类比，适合快速建立 RL 整体认知
+- 💡 推荐理由：中文讲解清晰，善用直观类比，适合快速建立 RL 整体认知。
 
 **③ 王树森：深度强化学习（DRL）**
 
 - 🔗 课程链接：https://www.bilibili.com/video/BV12o4y197US
-- 💡 推荐理由：史蒂文斯理工学院王树森博士主讲，语言简洁有力，抛弃繁琐的数学推导，直接给出直观易懂的结论，初学者能在短时间内快速建立 DRL 整体体系认知
+- 💡 推荐理由：史蒂文斯理工学院王树森博士主讲，语言简洁有力，抛弃繁琐的数学推导，直接给出直观易懂的结论，初学者能在短时间内快速建立 DRL 整体体系认知。
 
 #### 💻 2.2 代码学习
 
@@ -751,7 +767,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **② easy-rl（强化学习中文教程）**
 
 - 🔗 仓库地址：https://github.com/datawhalechina/easy-rl
-- 💡 推荐理由：Datawhale 出品，中文注释详细，覆盖主流 RL 算法实现，社区活跃，适合中文学习者系统入门
+- 💡 推荐理由：Datawhale 出品，中文注释详细，覆盖主流 RL 算法实现，社区活跃，适合中文学习者系统入门。
 
 ---
 </details>
@@ -780,7 +796,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **② The Illustrated Transformer（最直观的图解）**
 
 - 🔗 文章地址：https://jalammar.github.io/illustrated-transformer/
-- 💡 推荐理由：全程配图讲解 Attention 的计算过程，是理解 Transformer 最友好的入门材料，建议与论文配合阅读
+- 💡 推荐理由：全程配图讲解 Attention 的计算过程，是理解 Transformer 最友好的入门材料，建议与论文配合阅读。
 
 #### 🎬 1.2 视频讲解
 
@@ -793,7 +809,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 视频地址：https://www.youtube.com/watch?v=kCc8FmEb1nY
 - 🔗 配套代码：https://github.com/karpathy/nanoGPT
-- 💡 推荐理由：2 小时内从零手写一个 GPT，边写边讲原理，是目前最好的 Transformer 实践教程
+- 💡 推荐理由：2 小时内从零手写一个 GPT，边写边讲原理，是目前最好的 Transformer 实践教程。
 
 ---
 
@@ -815,7 +831,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **② LLaMA 技术报告（工程实践参考）**
 
 - 🔗 论文地址：https://arxiv.org/abs/2302.13971
-- 💡 推荐理由：Meta 开源模型的技术细节，展示了完整的预训练工程实践，包括数据配比、训练稳定性等问题的解决方案
+- 💡 推荐理由：Meta 开源模型的技术细节，展示了完整的预训练工程实践，包括数据配比、训练稳定性等问题的解决方案。
 
 ---
 
@@ -869,13 +885,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 **② Chain-of-Thought Prompting（思维链提示）**
 
 - 🔗 论文地址：https://arxiv.org/abs/2201.11903
-- 💡 推荐理由：推理模型的理论基础，展示了"让模型一步步思考"如何显著提升复杂推理任务的表现
+- 💡 推荐理由：推理模型的理论基础，展示了"让模型一步步思考"如何显著提升复杂推理任务的表现。
 
 **③ 代码实践：OpenR（开源推理模型训练框架）**
 
 - 🔗 仓库地址：https://github.com/openreasoner/openr
 - ⭐ GitHub Stars: 3k+
-- 💡 推荐理由：提供完整的推理模型训练 pipeline，包括推理数据生成、RL 训练等，是动手实践推理模型的最佳起点
+- 💡 推荐理由：提供完整的推理模型训练 pipeline，包括推理数据生成、RL 训练等，是动手实践推理模型的最佳起点。
 
 ---
 
@@ -887,14 +903,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/karpathy/nanoGPT
 - ⭐ GitHub Stars: 40k+
-- 💡 推荐理由：Karpathy 出品，约 300 行核心代码实现完整 GPT 训练，可在单张 GPU 上跑通，是从零实现 LLM 的最佳模板
+- 💡 推荐理由：Karpathy 出品，约 300 行核心代码实现完整 GPT 训练，可在单张 GPU 上跑通，是从零实现 LLM 的最佳模板。
 
 **② minimind（中文小模型全流程实现）**
 
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind 
-https://github.com/jingyaogong/minimind-v (多模态版本)
+- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v（多模态版本）
 - ⭐ GitHub Stars: 20k+
-- 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline
+- 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline。
 
 **③ LLM-from-scratch （从零实现大模型功能拆解讲述）**
 
@@ -929,7 +944,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 仓库地址：https://github.com/hiyouga/LLaMA-Factory
 - ⭐ GitHub Stars: 40k+
-- 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛
+- 💡 推荐理由：支持主流开源模型（LLaMA、Qwen、Mistral 等）的 SFT / DPO / LoRA 微调，提供 WebUI，降低工程门槛。
 
 
 **③ veRL（大规模 RLHF 训练框架）**
@@ -943,13 +958,13 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 **① Ollama（本地运行大模型最简单的方式）**
 
 - 🔗 官网地址：https://ollama.com/
-- 💡 推荐理由：一行命令在本地运行 LLaMA、Qwen 等模型，适合快速体验和调试
+- 💡 推荐理由：一行命令在本地运行 LLaMA、Qwen 等模型，适合快速体验和调试。
 
 **② vLLM（高性能推理框架）**
 
 - 🔗 仓库地址：https://github.com/vllm-project/vllm
 - ⭐ GitHub Stars: 45k+
-- 💡 推荐理由：基于 PagedAttention 技术，大幅提升推理吞吐量，是目前生产环境部署 LLM 的主流选择
+- 💡 推荐理由：基于 PagedAttention 技术，大幅提升推理吞吐量，是目前生产环境部署 LLM 的主流选择。
 
 ---
 
@@ -979,12 +994,12 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 论文地址：https://arxiv.org/abs/2304.08485
 - 🔗 李沐精读视频：https://www.bilibili.com/video/BV1iN411r7ma
-- 💡 推荐理由：结构简洁（CLIP + Projector + LLaMA），用指令微调实现视觉问答，是理解多模态 LLM 架构的最佳入门论文
+- 💡 推荐理由：结构简洁（CLIP + Projector + LLaMA），用指令微调实现视觉问答，是理解多模态 LLM 架构的最佳入门论文。
 
 **③ Qwen-VL 技术报告（工程实践参考）**
 
 - 🔗 论文地址：https://arxiv.org/abs/2308.12966
-- 💡 推荐理由：详细描述了一个完整的多模态模型训练流程，包括多阶段训练策略和数据配比，适合工程落地参考
+- 💡 推荐理由：详细描述了一个完整的多模态模型训练流程，包括多阶段训练策略和数据配比，适合工程落地参考。
 
 #### 💻 6.2 代码实践
 
@@ -992,7 +1007,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 仓库地址：https://github.com/haotian-liu/LLaVA
 - ⭐ GitHub Stars: 22k+
-- 💡 推荐理由：代码结构清晰，支持自定义数据集微调，是动手实践多模态模型的最佳起点
+- 💡 推荐理由：代码结构清晰，支持自定义数据集微调，是动手实践多模态模型的最佳起点。
 
 ---
 
@@ -1011,7 +1026,7 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** Agent = LLM（大脑） + 记忆 + 规划 + 工具使用。它能自主感知环境、做出决策并执行动作。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
 
 **与普通 Chatbot 的区别：** Chatbot 是被动响应，Agent 是主动规划与行动。
 
@@ -1036,7 +1051,33 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 - 🔗 论文地址：https://arxiv.org/pdf/2309.07864
 - 💡 推荐理由：长文综述类材料，可按目录选读，用于扩展视野。
 
-#### 🔀 1.2 Agent 的经典架构模式
+---
+
+### ⚙️ 二、Agent 核心能力
+
+Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而系统架构决定 Agent 能否从“对话”走向“行动”。这涉及三个核心能力——规划、记忆和工具调用。
+
+**规划 (Planning)**：决定任务如何分解、执行顺序如何安排、遇到错误如何调整。包括任务拆解（将复杂目标拆分为可执行的子任务链）、动态规划（ReAct 模式的推理-行动-观察循环）和自我反思（从失败中学习并优化策略）。
+
+**记忆 (Memory)**：管理信息的存储与检索。短期记忆利用上下文窗口记录当前对话状态；长期记忆通过向量数据库存储历史经验或专业知识，随取随用。
+
+**工具调用 (Tool Use)**：让 Agent 能操作外部环境。通过 API 调用搜索引擎、运行代码、访问数据库等，需要约定清晰的接口规范、权限控制和错误处理机制。
+
+#### 🎯 2.1 规划与推理
+
+规划（Planning）是 Agent 的"大脑"，决定任务如何分解、执行顺序如何安排、遇到错误如何调整。好的规划能力让 Agent 从单次响应走向多步迭代，从被动执行走向主动优化。
+
+**任务分解：**
+
+将复杂目标拆分为可管理的子任务链。例如“帮我写一篇行业分析报告”可分解为：确定主题→搜集资料→整理大纲→撰写各章节→审核修改。每个子任务有明确的输入、输出和验收标准，便于 Agent 逐一执行和检查进度。
+
+**动态规划与反思：**
+
+- **ReAct 模式**：推理（Reasoning）→ 行动（Action）→ 观察（Observation）→ 再推理的循环。Agent 在每一步行动前先思考"我需要做什么"，执行后观察结果，再决定下一步。这种"思考-行动-反馈"的闭环让 Agent 能根据环境反馈调整策略。
+
+- **自我反思（Self-Reflection）**：当行动结果不达标或出现错误时，Agent 能分析失败原因、总结教训并调整后续计划。Reflexion 等框架通过将失败经验存入记忆，让 Agent 在类似场景下避免重复犯错。
+
+**推荐阅读：**
 
 **① ReAct**
 
@@ -1052,56 +1093,25 @@ https://github.com/jingyaogong/minimind-v (多模态版本)
 
 - 🔗 论文地址：https://arxiv.org/pdf/2303.11366   
 - 💡 重点理解：引入了自我反思机制，通过在外部环境中试错来获取语言反馈。模型将失败的尝试存储在短期记忆中，并在下一次迭代时根据这些“教训”修正策略，这种“自省”能力让 Agent 具备了在不更新参数的情况下进行自我优化的能力。
----
-
-### ⚙️ 二、Agent 核心能力
-
-Agent 的本质是“系统”而非“模型”。模型提供推理能力，而系统架构决定 Agent 能否从“对话”走向“行动”。这涉及两个核心能力：一是工具调用，让 Agent 能安全、可靠地操作外部环境；二是记忆与上下文管理，让信息在长短期存储与有限窗口间高效流动。
-
-#### 🔧 2.1 工具调用
-
-**工具是什么：把外部能力封装成可调用的函数**
-
-工具是 Agent 的“手脚”：搜索、计算器、访问数据库、发消息等。除了名字和说明要清楚，还要约定入参/出参、超时、重试、是否改数据、给多大权限。
-
-**① OpenAI：Function Calling 指南**
-
-- 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
-- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
-
-**② Anthropic：Tool Use 概览**
-
-- 🔗 文档地址：https://docs.anthropic.com/claude/docs/tool-use
-- 💡 推荐理由：介绍 Client/Server 工具的执行模式、Agent 循环的工作机制，以及工具调用的流程，适合理解工具集成的核心概念与实现路径。
-
-**③ Model Context Protocol（MCP）**
-
-- 🔗 文档地址：https://modelcontextprotocol.io/introduction
-- 🔗 参考实现：https://github.com/modelcontextprotocol/servers
-- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
-
-**④ Agent Skills with Anthropic**
-
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
-- 💡 推荐理由：学习用开放标准构建可复用的智能体技能，掌握将技能、MCP 与子智能体组合的方法，搭建能访问外部数据、具备专业知识的强大的智能体系统。
 
 #### 🧠 2.2 记忆与上下文管理
 
-本节说明对话与外部知识如何进入模型、如何驻留：在系统提示、历史、工具返回与检索片段共同占用 token 的前提下，如何配置与裁剪上下文。随后讨论短期（工作）记忆、长期记忆与RAG技术。
+本节探讨 Agent 如何管理信息的存储与流动：短期（工作）记忆关注在有限上下文窗口内如何保留关键信息，长期记忆解决跨会话的知识持久化与检索，RAG 则负责将外部知识库实时接入推理过程。
 
 **短期（工作）记忆：**
 
-- 对话缓冲 / 滑动窗口：仅保留最近 k 轮对话或固定长度的 Token。实现最简单、延迟最低，但存在断层式遗忘问题，一旦信息超出窗口，Agent 将失去对早期指令的感知。
-- 摘要压缩：周期性地将历史对话压缩为摘要，再继续对话。多次压缩可能导致细节失真和关键信息丢失，建议采用“摘要 + 最近 n 轮原话”的混合方案，兼顾效率与准确性。
+上下文窗口有限，只能保留最近的对话。常用策略：
+- **滑动窗口**：仅保留最近 k 轮或固定长度 Token。实现最简单，但超出窗口的早期信息会彻底丢失。
+- **摘要压缩**：周期性将历史压缩为摘要再继续。多次压缩可能导致细节失真。
 
 **长期记忆：**
 
-- 向量数据库 + 混合检索： 结合语义检索理解意图与关键词检索锁定专有名词。引入重排序步骤。初次检索保证“召回率”，重排序保证“准确率”，防止 Agent 被海量但不相关的知识片段干扰。
-- 结构化记忆： 用户偏好、任务状态机、会话级元数据存放在 DB / KV，而非全部塞进 prompt。 
+- 语义检索 + 重排序：将文档等知识转为向量存入数据库，检索时先用语义相似度召回候选片段，再用重排序模型精选最相关的内容。解决“如何从海量知识中找到当前问题真正需要的片段”。
+- 结构化存储：将用户画像、任务状态、会话上下文等以结构化形式（如 JSON、数据库记录）持久化存储，随需读取。解决“跨会话记住用户偏好和应用状态”。 
 
-**RAG 技术：**
+**RAG 技术（检索增强生成）：**
 
-- **RAG**（Retrieval-Augmented Generation，检索增强生成）指：在回答前，先从文档、知识库、网页等语料里检索出与问题相关的若干片段，再与当前对话一起拼进提示，让模型在“有据可依”的上下文中生成。
+- 推理时实时从外部知识库（文档、网页、数据库等）检索最相关的片段，再交给模型生成答案。这样模型既能利用实时/私有知识，又不受训练数据截止日期限制。
 
 **推荐阅读：**
 
@@ -1136,6 +1146,33 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - 🔗 文档地址：https://docs.langchain.com/oss/python/langchain/rag
 - 💡 推荐理由：官方文档里从加载、切分、向量库到检索接模型的主线，适合动手搭第一条 RAG 链路。
 
+#### 🔧 2.3 工具调用
+
+**工具是什么：把外部能力封装成可调用的函数**
+
+工具是 Agent 的“手脚”：搜索、计算器、访问数据库、发消息等。除了名字和说明要清楚，还要约定入参/出参、超时、重试、是否改数据、给多大权限。
+
+**① OpenAI：Function Calling 指南**
+
+- 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
+- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
+
+**② Anthropic：Tool Use 概览**
+
+- 🔗 文档地址：https://docs.anthropic.com/claude/docs/tool-use
+- 💡 推荐理由：介绍 Client/Server 工具的执行模式、Agent 循环的工作机制，以及工具调用的流程，适合理解工具集成的核心概念与实现路径。
+
+**③ Model Context Protocol（MCP）**
+
+- 🔗 文档地址：https://modelcontextprotocol.io/introduction
+- 🔗 参考实现：https://github.com/modelcontextprotocol/servers
+- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
+
+**④ Agent Skills with Anthropic**
+
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
+- 💡 推荐理由：学习用开放标准构建可复用的智能体技能，掌握将技能、MCP 与子智能体组合的方法，搭建能访问外部数据、具备专业知识的强大的智能体系统。
+
 ---
 
 ### 🤝 三、多智能体系统
@@ -1160,12 +1197,12 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 **① 吴恩达：多智能体系统入门介绍**
 
 - 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
-- 💡 推荐理由：介绍多 Agent 的核心概念与应用场景
+- 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 **② HuggingFace Agents Course（系统入门首选）**
 
 - 🔗 课程地址：https://huggingface.co/learn/agents-course/
-- 💡 推荐理由：HuggingFace 官方出品，从单 Agent 基础到多 Agent 协作循序渐进，配有可直接运行的代码实践，是目前最完整的开源 Agent 入门课程
+- 💡 推荐理由：HuggingFace 官方出品，从单 Agent 基础到多 Agent 协作循序渐进，配有可直接运行的代码实践，是目前最完整的开源 Agent 入门课程。
 
 **代表系统精读：**
 
@@ -1187,12 +1224,12 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 **① A Survey on LLM-based Autonomous Agents（全景综述）**
 
 - 🔗 论文地址：https://arxiv.org/abs/2308.11432
-- 💡 推荐理由：全面梳理 LLM Agent 的记忆、规划、工具使用与多 Agent 协作四大模块，适合在深入某个方向前建立完整的认知框架
+- 💡 推荐理由：全面梳理 LLM Agent 的记忆、规划、工具使用与多 Agent 协作四大模块，适合在深入某个方向前建立完整的认知框架。
 
 **② Large Language Model based Multi-Agents: A Survey of Progress and Challenges（多智能体专项综述）**
 
 - 🔗 论文地址：https://arxiv.org/abs/2402.01680
-- 💡 推荐理由：专注于多 Agent 系统本身，系统梳理 LLM 驱动的多 Agent 在通信、组织、环境与应用上的最新进展与挑战
+- 💡 推荐理由：专注于多 Agent 系统本身，系统梳理 LLM 驱动的多 Agent 在通信、组织、环境与应用上的最新进展与挑战。
 
 #### 📡 3.2 智能体之间如何「说话」？——交互协议
 
@@ -1232,7 +1269,7 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 **① DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
 
 - 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程
+- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
 
 **推荐阅读：**
 
@@ -1248,7 +1285,7 @@ Agent 的本质是“系统”而非“模型”。模型提供推理能力，�
 - 🔗 论文地址：https://arxiv.org/abs/2303.17760
 - 🔗 仓库地址：https://github.com/camel-ai/camel
 - ⭐ GitHub Stars: 16k+
-- 💡 推荐理由：最早系统研究 LLM Agent 间角色扮演通信的论文，提出用"任务指定 Agent"驱动"执行 Agent"的双 Agent 通信范式，是理解 Agent 对话如何被设计的经典入门文献
+- 💡 推荐理由：最早系统研究 LLM Agent 间角色扮演通信的论文，提出用"任务指定 Agent"驱动"执行 Agent"的双 Agent 通信范式，是理解 Agent 对话如何被设计的经典入门文献。
 
 #### 🏛️ 3.3 智能体团队如何「组织」？——组织结构
 
@@ -1283,7 +1320,7 @@ Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误�
 **① DeepLearning.AI：Multi AI Agent Systems with crewAI**
 
 - 🔗 课程地址：https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
-- 💡 推荐理由：crewAI 作者主讲，从层级式到流水线式手把手搭建多 Agent 系统，是理解 Agent 团队组织方式最直观的实战课程
+- 💡 推荐理由：crewAI 作者主讲，从层级式到流水线式手把手搭建多 Agent 系统，是理解 Agent 团队组织方式最直观的实战课程。
 
 
 **推荐阅读：**
@@ -1292,13 +1329,13 @@ Agent 的组织方式决定了任务如何分解、结果如何汇聚、错误�
 
 - 🔗 仓库地址：https://github.com/crewAIInc/crewAI
 - ⭐ GitHub Stars: 49k+
-- 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用
+- 💡 推荐理由：以”crew（团队）”为核心抽象，每个 Agent 有明确的 role / goal / backstory，支持层级式和顺序式两种协作模式，上手简单，适合快速搭建角色分工明确的多 Agent 应用。
 
 **② LangGraph（基于图结构的 Agent 编排）**
 
 - 🔗 仓库地址：https://github.com/langchain-ai/langgraph
 - ⭐ GitHub Stars: 30k+
-- 💡 推荐理由：将 Agent 协作流程建模为有向图（节点 = Agent/工具，边 = 消息流），支持条件分支、循环、并行执行，适合需要精确控制流程的复杂 MAS 场景
+- 💡 推荐理由：将 Agent 协作流程建模为有向图（节点 = Agent/工具，边 = 消息流），支持条件分支、循环、并行执行，适合需要精确控制流程的复杂 MAS 场景。
 
 **③ MetaGPT（将公司 SOP 编码为 Agent 协作规范）**
 
@@ -1339,7 +1376,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 🔗 论文地址：https://arxiv.org/abs/2308.10848
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentVerse
 - ⭐ GitHub Stars: 5k+
-- 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"
+- 💡 推荐理由：专为多 Agent 协作设计的模拟环境框架，支持动态调整 Agent 数量与角色，研究多 Agent 在共享环境中的涌现行为与协作策略，适合理解"如何为多 Agent 系统构建合适的协作环境"。
 
 **② MultiAgentBench**
 
@@ -1357,7 +1394,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。  
+- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
 
 **② UI-TARS**
 
@@ -1369,7 +1406,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
-- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行。与 MobileRun（云端多模型后端）和 UI-TARS（桌面/移动兼顾）相比，更适合端上隐私敏感场景与低延迟需求。  
+- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行。与 MobileRun（云端多模型后端）和 UI-TARS（桌面/移动兼顾）相比，更适合端上隐私敏感场景与低延迟需求。
 
 #### 4.2 🌐 Computer Use Agent
 
@@ -1377,13 +1414,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/browser-use/browser-use   
 - ⭐ GitHub Stars: 90k+  
-- 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持多标签页、表单填写、数据采集等网页操作。深度优化网页场景，适合批量网页自动化、自动化测试、信息抓取等落地需求。  
+- 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持多标签页、表单填写、数据采集等网页操作。深度优化网页场景，适合批量网页自动化、自动化测试、信息抓取等落地需求。
 
 **② Anthropic Computer Use**
 
 - 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
 - ⭐ GitHub Stars: 16k+  
-- 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。    
+- 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。
 
 #### 4.3 🔍 DeepResearch Agent
 
@@ -1391,13 +1428,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。  
+- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 **② dzhng/deep-research**
 
 - 🔗 仓库地址：https://github.com/dzhng/deep-research   
 - ⭐ GitHub Stars: 18k+  
-- 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。  
+- 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。
 
 
 #### 4.4 🛍️ 基于 OpenClaw 部署小红书自动运营
