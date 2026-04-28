@@ -28,14 +28,22 @@
 
 本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
 
-| 阶段 | 学习重点 | 核心目标 | 
-|:---:|:---|:---|
+<div align="center">
+
+| 阶段 | 学习重点 | 核心目标 |
+|:---:|:---:|:---|
 | **Stage 0** | Big Picture | 理解整体路径与最终目标 |
 | **Stage 1** | DL + RL | 建立深度学习与强化学习基础 |
 | **Stage 2** | LLM | 构建大语言模型并掌握后训练方法 |
 | **Stage 3** | Agent | 构建智能体框架与应用 |
 
-<img src="asset/image_route.png" alt="Slay the LLM Maze" width="820" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="asset/image_route.png" alt="LLM Beginner Route" width="90%" />
+</div>
 
 ---
 ## 🚀 学习路径选择
