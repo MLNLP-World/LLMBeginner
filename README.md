@@ -20,10 +20,10 @@
   <img src="https://img.shields.io/badge/From_Zero_to_Agent-8b5cf6?style=flat-square" alt="From Zero to Agent" />
 </p>
 
+<div align="center">
+
 > 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。
 
-> [!NOTE]
-> 由于我们能力与经验有限，内容难免存在不足或疏漏，欢迎交流、补充与指正。
 
 </div>
 
@@ -43,6 +43,11 @@
     </td>
   </tr>
 </table>
+
+> 由于我们能力与经验有限，内容难免存在不足或疏漏，欢迎交流、补充与指正。😀 
+
+</div>
+
 
 <!-- <table>
   <tr>
@@ -72,7 +77,7 @@
 
 ## 📋 路线总览
 
-本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
+本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习重点和核心目标。
 
 <!-- <p>
   <img src="https://img.shields.io/badge/Stage_0-Big_Picture-fde68a?style=for-the-badge&labelColor=92400e" alt="Stage 0" />
@@ -90,12 +95,6 @@
 | 🧩 **Stage 3** | Agent | 构建智能体框架与应用 |
 
 </div>
-
-<br/>
-
-</div>
-
-<br/>
 
 <div align="center">
   <img src="asset/image_route.png" alt="LLM Beginner Route" width="90%" />
