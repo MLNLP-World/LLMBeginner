@@ -809,10 +809,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 > 💬 建议：把你的学习计划写成一个 Markdown 文件放在本地仓库的专用文件夹，定期回顾和更新。
 
-</blockquote>
 </details>
 
+</blockquote>
+
+
 <blockquote>
+
 <details>
 <!-- ## 📚 Stage 1: DL + RL 基础 -->
 
@@ -889,11 +892,12 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 ---
 
-</blockquote>
 </details>
 
+</blockquote>
 
 <blockquote>
+
 <details>
 <!-- ## 🤖 Stage 2: LLM -->
 <summary><strong>🤖 Stage 2: LLM</strong></summary>
@@ -1138,11 +1142,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 <!-- ## 🧩 Stage 3: Agent -->
 
-</blockquote>
 </details>
+
+</blockquote>
+
 <blockquote>
 
 <details>
+
 <summary><strong>🧩 Stage 3: Agent</strong></summary>
 
 完成 Stage 2 后，你已掌握 LLM 的训练、推理与部署。Stage 3 关注如何把模型放进**闭环**：感知 → 决策 → 行动 → 观察 → 更新状态，直至任务完成。
