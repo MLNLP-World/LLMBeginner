@@ -22,6 +22,9 @@
 
 > 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。
 
+> [!NOTE]
+> 由于我们能力与经验有限，内容难免存在不足或疏漏，欢迎交流、补充与指正。
+
 </div>
 
 <table>
@@ -36,12 +39,12 @@
     </td>
     <td width="33%" valign="top">
       <h3>🎯 适合谁</h3>
-      <p>适合零基础入门者、想补体系的开发者，以及准备做 LLM/Agent 项目的人。</p>
+      <p>适合零基础入门且准备做 LLM或Agent 项目的人。</p>
     </td>
   </tr>
 </table>
 
-<table>
+<!-- <table>
   <tr>
     <td width="50%" valign="top">
       <h4>✨ 快速入口</h4>
@@ -57,10 +60,9 @@
       <p>看懂概念 → 精读资料 → 跑通代码 → 做小项目 → 构建自己的知识图谱</p>
     </td>
   </tr>
-</table>
+</table> -->
 
-> [!NOTE]
-> 由于我们能力与经验有限，内容难免存在不足或疏漏，欢迎交流、补充与指正。
+
 
 ---
 
@@ -72,12 +74,12 @@
 
 本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
 
-<p>
+<!-- <p>
   <img src="https://img.shields.io/badge/Stage_0-Big_Picture-fde68a?style=for-the-badge&labelColor=92400e" alt="Stage 0" />
   <img src="https://img.shields.io/badge/Stage_1-DL_%2B_RL-bbf7d0?style=for-the-badge&labelColor=166534" alt="Stage 1" />
   <img src="https://img.shields.io/badge/Stage_2-LLM-dbeafe?style=for-the-badge&labelColor=1d4ed8" alt="Stage 2" />
   <img src="https://img.shields.io/badge/Stage_3-Agent-f5d0fe?style=for-the-badge&labelColor=a21caf" alt="Stage 3" />
-</p>
+</p> -->
 <div align="center">
 
 | 阶段 | 学习重点 | 核心目标 |
@@ -118,6 +120,7 @@
     </td>
   </tr>
 </table>
+
 ### ⚡ 精简版本说明
 
 - **适用人群**：时间有限、希望快速入门的学习者  
