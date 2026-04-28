@@ -119,15 +119,26 @@
 
 </div>
 
-> ### ⚡ 精简版本说明
->- **适用人群**：时间有限、希望快速入门的学习者  
->- **学习目标**：建立大模型的整体认知与基本实践能力  
->- **内容特点**：聚焦核心概念与关键技术，路径精简、节奏紧凑  
+<div style="background:#EAF4E2; color:#000000; border-left:5px solid #8BAF68; padding:12px 16px; border-radius:8px;">
+
+### ⚡ 精简版本说明
+- **适用人群**：时间有限、希望快速入门的学习者  
+- **学习目标**：建立大模型的整体认知与基本实践能力  
+- **内容特点**：聚焦核心概念与关键技术，路径精简、节奏紧凑
+
+</div>
+
+<br>
+<br>
 
 <details>
 <summary><strong>查看精简版本内容</strong></summary>
 
-<blockquote>
+
+
+<div style="margin-left: 1.5em;">
+
+
 
 <details>
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
@@ -185,9 +196,9 @@
 
 </details>
 
-</blockquote>
 
-<blockquote>
+
+
 
 <details>
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
@@ -243,9 +254,9 @@
 
 </details>
 
-</blockquote>
 
-<blockquote>
+
+
 
 <details>
 <summary><strong>🤖 Stage 2: LLM</strong></summary>
@@ -422,9 +433,9 @@
 
 </details>
 
-</blockquote>
 
-<blockquote>
+
+
 
 <details>
 <summary><strong>🧩 Stage 3: Agent</strong></summary>
@@ -732,22 +743,31 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-</blockquote>
+
 
 </details>
 
+<br>
+<br>
 
-> ### 📚 详细版本说明
-> - **适用人群**：有充足时间、希望系统深入学习的学习者  
-> - **学习目标**：全面掌握从原理到应用的完整技术体系  
-> - **内容特点**：覆盖基础理论、模型训练、推理机制、Agent 系统与工程实践等全流程内容  
+<div style="background:#F3F0D7; color:#000000; border-left:5px solid #A3B18A; padding:12px 16px; border-radius:8px;">
+
+### 📚 详细版本说明
+- **适用人群**：有充足时间、希望系统深入学习的学习者  
+- **学习目标**：全面掌握从原理到应用的完整技术体系  
+- **内容特点**：覆盖基础理论、模型训练、推理机制、Agent 系统与工程实践等全流程内容  
+
+</div>
+
+<br>
+<br>
 
 <details>
 <summary><strong>查看详细版本内容</strong></summary>
 
 
+<div style="margin-left: 1.5em;">
 
-<blockquote>
 
 <details>
 <!-- ## 🗺️ Stage 0: Big Picture -->
@@ -811,10 +831,10 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-</blockquote>
 
 
-<blockquote>
+
+
 
 <details>
 <!-- ## 📚 Stage 1: DL + RL 基础 -->
@@ -894,9 +914,9 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-</blockquote>
 
-<blockquote>
+
+
 
 <details>
 <!-- ## 🤖 Stage 2: LLM -->
@@ -1144,9 +1164,9 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-</blockquote>
 
-<blockquote>
+
+
 
 <details>
 
@@ -1657,10 +1677,12 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-</blockquote>
+
 
 </details>
 
+<br>
+<br>
 ### 👥 组织者
 
 <p align="left">
