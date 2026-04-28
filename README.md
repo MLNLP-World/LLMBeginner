@@ -745,12 +745,15 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 <details>
 <summary><strong>查看详细版本内容</strong></summary>
 
-<details>
 
+
+<blockquote>
+
+<details>
 <!-- ## 🗺️ Stage 0: Big Picture -->
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
 
-<blockquote>
+
 
 在开始学习任何技术细节之前，先建立对整个 LLM 领域的全局认知至关重要。很多初学者容易陷入"学了很多，但不知道自己在哪里"的困境——Stage 0 就是为了避免这种迷失。
 
@@ -808,12 +811,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </blockquote>
 </details>
+
+<blockquote>
 <details>
 <!-- ## 📚 Stage 1: DL + RL 基础 -->
 
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
 
-<blockquote>
+
 
 ### 🟦 一、Deep Learning（深度学习）
 
@@ -886,11 +891,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </blockquote>
 </details>
+
+
+<blockquote>
 <details>
 <!-- ## 🤖 Stage 2: LLM -->
 <summary><strong>🤖 Stage 2: LLM</strong></summary>
 
-<blockquote>
+
 
 完成 Stage 1 后，你已具备深度学习与强化学习的基础。Stage 2 的目标是真正理解 LLM 的内部机制，并亲手构建和训练一个语言模型。
 
