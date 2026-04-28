@@ -127,6 +127,8 @@
 <details>
 <summary><strong>查看精简版本内容</strong></summary>
 
+<blockquote>
+
 <details>
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
 
@@ -181,8 +183,11 @@
 
 > 💬 建议：把你的学习计划写成一个 Markdown 文件放在本地仓库的专用文件夹，定期回顾和更新。
 
-
 </details>
+
+</blockquote>
+
+<blockquote>
 
 <details>
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
@@ -237,6 +242,10 @@
 ---
 
 </details>
+
+</blockquote>
+
+<blockquote>
 
 <details>
 <summary><strong>🤖 Stage 2: LLM</strong></summary>
@@ -412,6 +421,10 @@
 ---
 
 </details>
+
+</blockquote>
+
+<blockquote>
 
 <details>
 <summary><strong>🧩 Stage 3: Agent</strong></summary>
@@ -717,9 +730,9 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 19k+
 - 💡 推荐理由：AI4Finance Foundation 出品，用 LoRA 低成本微调开源 LLM，在金融情感分析数据集上取得最优成绩。支持量化投资、智能投顾、算法交易等核心金融场景，是目前最具影响力的开源金融 LLM 项目。
 
-
-
 </details>
+
+</blockquote>
 
 </details>
 
@@ -736,6 +749,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 <!-- ## 🗺️ Stage 0: Big Picture -->
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
+
+<blockquote>
 
 在开始学习任何技术细节之前，先建立对整个 LLM 领域的全局认知至关重要。很多初学者容易陷入"学了很多，但不知道自己在哪里"的困境——Stage 0 就是为了避免这种迷失。
 
@@ -791,11 +806,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 > 💬 建议：把你的学习计划写成一个 Markdown 文件放在本地仓库的专用文件夹，定期回顾和更新。
 
+</blockquote>
 </details>
 <details>
 <!-- ## 📚 Stage 1: DL + RL 基础 -->
 
 <summary><strong>📚 Stage 1: DL + RL 基础</strong></summary>
+
+<blockquote>
 
 ### 🟦 一、Deep Learning（深度学习）
 
@@ -865,10 +883,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 💡 推荐理由：Datawhale 出品，中文注释详细，覆盖主流 RL 算法实现，社区活跃，适合中文学习者系统入门。
 
 ---
+
+</blockquote>
 </details>
 <details>
 <!-- ## 🤖 Stage 2: LLM -->
 <summary><strong>🤖 Stage 2: LLM</strong></summary>
+
+<blockquote>
 
 完成 Stage 1 后，你已具备深度学习与强化学习的基础。Stage 2 的目标是真正理解 LLM 的内部机制，并亲手构建和训练一个语言模型。
 
@@ -1107,7 +1129,11 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 ---
 
 <!-- ## 🧩 Stage 3: Agent -->
+
+</blockquote>
 </details>
+<blockquote>
+
 <details>
 <summary><strong>🧩 Stage 3: Agent</strong></summary>
 
@@ -1615,6 +1641,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计。
 
 </details>
+
+</blockquote>
 
 </details>
 
