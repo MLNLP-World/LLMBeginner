@@ -103,22 +103,21 @@
 ---
 ## 🚀 学习路径选择
 
+<div align="center">
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <h4>⚡ 精简版</h4>
+    <td width="48%" valign="top">
+      <h4>⚡ 精简版本</h4>
       <p>优先跑通主线，适合想尽快建立认知框架的读者。</p>
     </td>
-    <td width="33%" valign="top">
-      <h4>📚 系统版</h4>
+    <td width="48%" valign="top">
+      <h4>📚 详细版本</h4>
       <p>保留理论、代码与项目实践，适合希望打牢基础的人。</p>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🧪 研究版</h4>
-      <p>建议在完成主线后补论文、复现和实验，逐步进入研究节奏。</p>
     </td>
   </tr>
 </table>
+
+</div>
 
 ### ⚡ 精简版本说明
 
