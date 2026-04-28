@@ -3,20 +3,64 @@
 <img src="asset/image.png" alt="Slay the LLM Maze" width="320" />
 
 # 零基础通关 LLM 的项目式学习路线
-![GitHub stars](https://img.shields.io/github/stars/chenyuanTKCY/LLMBeginner?style=social)
-![GitHub forks](https://img.shields.io/github/forks/chenyuanTKCY/LLMBeginner?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/chenyuanTKCY/LLMBeginner?style=social)
-![License](https://img.shields.io/github/license/chenyuanTKCY/LLMBeginner)
-![Last Commit](https://img.shields.io/github/last-commit/chenyuanTKCY/LLMBeginner)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Awesome](https://awesome.re/badge.svg)
-> 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。整体内容采用分阶段设计，从 Big Picture 到底层机制，再到项目实践与系统搭建，力求路径清晰、节奏可控，帮助学习者逐步建立较为完整的认知与动手能力 🚀
+<p>
+  <img src="https://img.shields.io/github/stars/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=f59e0b" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/forks/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=0ea5e9" alt="GitHub forks" />
+  <img src="https://img.shields.io/github/watchers/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=22c55e" alt="GitHub watchers" />
+</p>
+<p>
+  <img src="https://img.shields.io/github/license/chenyuanTKCY/LLMBeginner?style=flat-square&color=111827" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/chenyuanTKCY/LLMBeginner?style=flat-square&color=2563eb" alt="Last Commit" />
+  <img src="https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square" alt="PRs Welcome" />
+  <img src="https://awesome.re/badge-flat2.svg" alt="Awesome" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/LLM-Learning_Path-f97316?style=flat-square" alt="LLM Learning Path" />
+  <img src="https://img.shields.io/badge/Project-Based_Study-14b8a6?style=flat-square" alt="Project Based Study" />
+  <img src="https://img.shields.io/badge/From_Zero_to_Agent-8b5cf6?style=flat-square" alt="From Zero to Agent" />
+</p>
 
-由于我们能力与经验有限，内容难免存在不足或疏漏，敬请大家谅解，欢迎大家交流与指正。
-
-
+> 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。
 
 </div>
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🧭 你能获得什么</h3>
+      <p>从 Big Picture 到 DL / RL、LLM、Agent 的完整学习主线。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>🧱 这份路线怎么学</h3>
+      <p>按阶段推进，每阶段都给出目标、资料与可落地的练习方向。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>🎯 适合谁</h3>
+      <p>适合零基础入门者、想补体系的开发者，以及准备做 LLM/Agent 项目的人。</p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>✨ 快速入口</h4>
+      <p>
+        <a href="#-路线总览">路线总览</a><br/>
+        <a href="#-学习路径选择">学习路径选择</a><br/>
+        <a href="#stage-0-big-picture">Stage 0</a><br/>
+        <a href="#stage-1-dl--rl-基础">Stage 1</a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🛠️ 学习方式</h4>
+      <p>看懂概念 → 精读资料 → 跑通代码 → 做小项目 → 构建自己的知识图谱</p>
+    </td>
+  </tr>
+</table>
+
+> [!NOTE]
+> 由于我们能力与经验有限，内容难免存在不足或疏漏，欢迎交流、补充与指正。
 
 ---
 
@@ -28,6 +72,12 @@
 
 本仓库采用阶段式学习路径（Staged Learning Path），旨在帮助你从零基础逐步成长为具备 LLM 研究能力的开发者。每个阶段都有明确的学习目标和可交付成果。
 
+<p>
+  <img src="https://img.shields.io/badge/Stage_0-Big_Picture-fde68a?style=for-the-badge&labelColor=92400e" alt="Stage 0" />
+  <img src="https://img.shields.io/badge/Stage_1-DL_%2B_RL-bbf7d0?style=for-the-badge&labelColor=166534" alt="Stage 1" />
+  <img src="https://img.shields.io/badge/Stage_2-LLM-dbeafe?style=for-the-badge&labelColor=1d4ed8" alt="Stage 2" />
+  <img src="https://img.shields.io/badge/Stage_3-Agent-f5d0fe?style=for-the-badge&labelColor=a21caf" alt="Stage 3" />
+</p>
 <div align="center">
 
 | 阶段 | 学习重点 | 核心目标 |
@@ -48,27 +98,30 @@
 ---
 ## 🚀 学习路径选择
 
-本项目提供精简版本和详细版本两种学习路径，以适配不同学习需求：
-
----
-
-### ⚡ 精简版本
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>⚡ 精简版</h4>
+      <p>优先跑通主线，适合想尽快建立认知框架的读者。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h4>📚 系统版</h4>
+      <p>保留理论、代码与项目实践，适合希望打牢基础的人。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h4>🧪 研究版</h4>
+      <p>建议在完成主线后补论文、复现和实验，逐步进入研究节奏。</p>
+    </td>
+  </tr>
+</table>
+### ⚡ 精简版本说明
 
 - **适用人群**：时间有限、希望快速入门的学习者  
 - **学习目标**：建立大模型的整体认知与基本实践能力  
 - **内容特点**：聚焦核心概念与关键技术，路径精简、节奏紧凑  
 
----
-
-### 📚 详细版本
-
-- **适用人群**：有充足时间、希望系统深入学习的学习者  
-- **学习目标**：全面掌握从原理到应用的完整技术体系  
-- **内容特点**：覆盖基础理论、模型训练、推理机制、Agent系统与工程实践等全流程内容  
----
-
 <details>
-<summary><strong>精简版本</strong></summary>
+<summary><strong>查看精简版本内容</strong></summary>
 
 <details>
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
@@ -661,8 +714,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 </details>
 
 
+### 📚 详细版本说明
+
+- **适用人群**：有充足时间、希望系统深入学习的学习者  
+- **学习目标**：全面掌握从原理到应用的完整技术体系  
+- **内容特点**：覆盖基础理论、模型训练、推理机制、Agent 系统与工程实践等全流程内容  
+
 <details>
-<summary><strong>详细版本</strong></summary>
+<summary><strong>查看详细版本内容</strong></summary>
 
 <details>
 
