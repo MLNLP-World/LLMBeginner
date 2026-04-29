@@ -103,21 +103,27 @@
 ---
 ## 🚀 学习路径选择
 
+针对不同程度的学习者，本项目建立了两个版本的学习路径供您选择：
+
 <div align="center">
 <table>
   <tr>
     <td width="48%" valign="top">
       <h4>⚡ 精简版本</h4>
-      <p>优先跑通主线，适合想尽快建立认知框架的读者。</p>
+      <p>优先跑通主线，想尽快建立认知框架。</p>
     </td>
     <td width="48%" valign="top">
       <h4>📚 详细版本</h4>
-      <p>保留理论、代码与项目实践，适合希望打牢基础的人。</p>
+      <p>保留理论、代码与项目实践，希望打牢基础。</p>
     </td>
   </tr>
 </table>
 
 </div>
+
+
+<br>
+
 
 <div style="background:#EAF4E2; color:#000000; border-left:5px solid #8BAF68; padding:12px 16px; border-radius:8px;">
 
@@ -750,7 +756,14 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 <br>
 <br>
 
+---
+<br>
+<br>
+
 <div style="background:#F3F0D7; color:#000000; border-left:5px solid #A3B18A; padding:12px 16px; border-radius:8px;">
+
+
+
 
 ### 📚 详细版本说明
 - **适用人群**：有充足时间、希望系统深入学习的学习者  
@@ -761,6 +774,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 <br>
 <br>
+
+
 
 <details>
 <summary><strong>查看详细版本内容</strong></summary>
@@ -1680,6 +1695,11 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 
 </details>
+
+<br>
+<br>
+
+---
 
 <br>
 <br>
