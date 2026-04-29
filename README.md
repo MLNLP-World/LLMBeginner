@@ -4,13 +4,13 @@
 
 # 零基础通关 LLM 的项目式学习路线
 <p>
-  <img src="https://img.shields.io/github/stars/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=f59e0b" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=0ea5e9" alt="GitHub forks" />
-  <img src="https://img.shields.io/github/watchers/chenyuanTKCY/LLMBeginner?style=for-the-badge&color=22c55e" alt="GitHub watchers" />
+  <img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=for-the-badge&color=f59e0b" alt="GitHub stars" />
+  <img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=for-the-badge&color=0ea5e9" alt="GitHub forks" />
+  <img src="https://img.shields.io/github/watchers/MLNLP-World/LLMBeginner?style=for-the-badge&color=22c55e" alt="GitHub watchers" />
 </p>
 <p>
-  <img src="https://img.shields.io/github/license/chenyuanTKCY/LLMBeginner?style=flat-square&color=111827" alt="License" />
-  <img src="https://img.shields.io/github/last-commit/chenyuanTKCY/LLMBeginner?style=flat-square&color=2563eb" alt="Last Commit" />
+  <img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat-square&color=111827" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/MLNLP-World/LLMBeginner?style=flat-square&color=2563eb" alt="Last Commit" />
   <img src="https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square" alt="PRs Welcome" />
   <img src="https://awesome.re/badge-flat2.svg" alt="Awesome" />
 </p>
