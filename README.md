@@ -473,11 +473,15 @@
 
 ❌ **做不到**：完全自主设定目标（仍需人类定义任务）、真正的理解与意识（仍是模式匹配）。
 
-**李宏毅：一堂课搞懂 AI Agent 的原理**
+**① 李宏毅：一堂课搞懂 AI Agent 的原理**
 
 - 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
+**② 吴恩达：Agentic AI**
+
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
 
 ### ⚙️ 二、Agent 核心能力
 
@@ -1218,12 +1222,17 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
-**② Lilian Weng：LLM Powered Autonomous Agents（博文）**
+**② 吴恩达：Agentic AI**
+
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
+
+**③ Lilian Weng：LLM Powered Autonomous Agents（博文）**
 
 - 🔗 文章地址：https://lilianweng.github.io/posts/2023-06-23-agent/
 - 💡 推荐理由：全面解析 LLM Agent 的设计范式与关键技术，配有丰富的案例分析，是理解 LLM Agent 架构设计的优质参考。
 
-**③ Agent 领域综述**
+**④ Agent 领域综述**
 
 - 🔗 论文地址：https://arxiv.org/pdf/2309.07864
 - 💡 推荐理由：长文综述类材料，可按目录选读，用于扩展视野。
