@@ -1482,7 +1482,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 **① CMU: Agents and Multi-Agent Communication**
 
 - 🔗 课程地址：https://www.youtube.com/watch?v=ixLXrgF77ME
-- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 AI Agents 交流机制的绝佳资源。
+- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 Agents 交流机制的绝佳资源。
 
 **推荐阅读：**
 
