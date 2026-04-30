@@ -134,17 +134,10 @@
 
 </div>
 
-<br>
-<br>
-
 <details>
 <summary><strong>查看精简版本内容</strong></summary>
 
-
-
 <div style="margin-left: 1.5em;">
-
-
 
 <details>
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
@@ -457,7 +450,7 @@
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的系统。
 
 **与普通 Chatbot 的区别：**
 
@@ -473,11 +466,15 @@
 
 ❌ **做不到**：完全自主设定目标（仍需人类定义任务）、真正的理解与意识（仍是模式匹配）。
 
-**李宏毅：一堂课搞懂 AI Agent 的原理**
+**① 李宏毅：一堂课搞懂 AI Agent 的原理**
 
 - 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
+**② 吴恩达：Agentic AI**
+
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
 
 ### ⚙️ 二、Agent 核心能力
 
@@ -531,10 +528,19 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐阅读：**
 
-**Anthropic：Effective Context Engineering for AI Agents**
+**① MemGPT**
 
-- 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-- 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
+- 🔗 论文地址：https://arxiv.org/abs/2310.08560
+- 🔗 仓库地址：https://github.com/cpacker/MemGPT
+- 💡 推荐理由：将 LLM 视为操作系统，通过虚拟上下文管理和分层存储实现“无限记忆”，是理解记忆层架构设计的奠基性工作。
+
+**② Mem0**
+
+- 🔗 仓库地址：https://github.com/mem0ai/mem0
+- ⭐ GitHub Stars: 54k+
+- 🔗 论文地址：https://arxiv.org/pdf/2504.19413
+- 🔗 博客地址：https://get.mem.ai/blog
+- 💡 推荐理由：为LLM提供的智能的，可自我改进的记忆层，可以实现在各种应用中提供更加个性化的和连贯一致的用户体验，是较常用的记忆层实现参考之一。
 
 #### 🔧 2.3 工具调用
 
@@ -542,10 +548,12 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 工具是 Agent 的“手脚”：搜索、计算器、访问数据库、发消息等。除了名字和说明要清楚，还要约定入参/出参、超时、重试、是否改数据、给多大权限。
 
+**推荐阅读：**
+
 **OpenAI：Function Calling 指南**
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
-- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
+- 💡 推荐理由：结构化调用的行业常用约定，对应自然语言如何变成 JSON 参数、运行时如何执行与回写的闭环。
 
 ---
 
@@ -570,7 +578,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **吴恩达：多智能体系统入门介绍**
 
-- 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
 - 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 
@@ -581,7 +589,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 - 🔗 论文地址：https://arxiv.org/abs/2307.07924
 - 🔗 仓库地址：https://github.com/OpenBMB/ChatDev
 - ⭐ GitHub Stars: 32k+
-- 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接
+- 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接。
 
 
 
@@ -621,10 +629,10 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐课程：**
 
-**DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
+**CMU: Agents and Multi-Agent Communication**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
+- 🔗 课程地址：https://www.youtube.com/watch?v=ixLXrgF77ME
+- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 AI Agents 交流机制的绝佳资源。
 
 **推荐阅读：**
 
@@ -633,7 +641,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 - 🔗 论文地址：https://arxiv.org/abs/2308.08155
 - 🔗 仓库地址：https://github.com/microsoft/autogen
 - ⭐ GitHub Stars: 57k+
-- 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一
+- 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一。
 
 
 #### 🏛️ 3.3 智能体团队如何「组织」？——组织结构
@@ -726,8 +734,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
-
+- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合从一条可复现的移动端指令跑通到自定义流程。
 
 
 #### 4.2 🔍 DeepResearch Agent
@@ -736,7 +743,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
+- 💡 推荐理由：适合作为全流程主线的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 
 
@@ -753,12 +760,10 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-<br>
-<br>
+
 
 ---
-<br>
-<br>
+
 
 <div style="background:#F3F0D7; color:#000000; border-left:5px solid #A3B18A; padding:12px 16px; border-radius:8px;">
 
@@ -772,8 +777,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </div>
 
-<br>
-<br>
 
 
 
@@ -1197,7 +1200,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的系统。
 
 **与普通 Chatbot 的区别：**
 
@@ -1218,12 +1221,17 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - 🔗 视频地址：https://www.youtube.com/watch?v=M2Yg1kwPpts
 - 💡 推荐理由：系统讲解 Agent 的核心概念，适合快速建立整体认知并入门。
 
-**② Lilian Weng：LLM Powered Autonomous Agents（博文）**
+**② 吴恩达：Agentic AI**
 
-- 🔗 文章地址：https://lilianweng.github.io/posts/2023-06-23-agent/
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
+
+**③ Lilian Weng：LLM Powered Autonomous Agents**
+
+- 🔗 博文地址：https://lilianweng.github.io/posts/2023-06-23-agent/
 - 💡 推荐理由：全面解析 LLM Agent 的设计范式与关键技术，配有丰富的案例分析，是理解 LLM Agent 架构设计的优质参考。
 
-**③ Agent 领域综述**
+**④ Agent 领域综述**
 
 - 🔗 论文地址：https://arxiv.org/pdf/2309.07864
 - 💡 推荐理由：长文综述类材料，可按目录选读，用于扩展视野。
@@ -1292,33 +1300,39 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐阅读：**
 
-**① Anthropic：Effective Context Engineering for AI Agents**
+**① MemGPT**
+
+- 🔗 论文地址：https://arxiv.org/abs/2310.08560
+- 🔗 仓库地址：https://github.com/cpacker/MemGPT
+- 💡 推荐理由：将 LLM 视为操作系统，通过虚拟上下文管理和分层存储实现“无限记忆”，是理解记忆层架构设计的奠基性工作。
+
+**② Anthropic：Effective Context Engineering for AI Agents**
 
 - 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 - 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
 
-**② Claude-Mem**
+**③ Claude-Mem**
 
 - 🔗 文档地址：https://docs.claude-mem.ai/introduction
 - 🔗 仓库地址：https://github.com/thedotmack/claude-mem
 - 💡 推荐理由：工程向的长期记忆/持久化参考，适合自建部署时阅读。
 
-**③ Mem0（The Memory Layer for AI Agents）**
+**④ Mem0**
 
 - 🔗 仓库地址：https://github.com/mem0ai/mem0
 - ⭐ GitHub Stars: 54k+
 - 🔗 论文地址：https://arxiv.org/pdf/2504.19413
 - 🔗 博客地址：https://get.mem.ai/blog
-- 💡 推荐理由：较常用的记忆层实现参考之一；可先读论文与博客了解动机与能力边界，再决定是否接入。
+- 💡 推荐理由：为LLM提供的智能的，可自我改进的记忆层，可以实现在各种应用中提供更加个性化的和连贯一致的用户体验，是较常用的记忆层实现参考之一。
 
 
-**④ Agent Memory 综述（长文 PDF，选读）**
+**⑤ Agent Memory 综述（长文 PDF，选读）**
 
 - 🔗 论文地址：https://arxiv.org/pdf/2512.13564
 - 💡 推荐理由：可作为 agent memory 研究进展的补充阅读。
 
 
-**⑤ LangChain 文档：RAG**
+**⑥ LangChain 文档：RAG**
 
 - 🔗 文档地址：https://docs.langchain.com/oss/python/langchain/rag
 - 💡 推荐理由：官方文档里从加载、切分、向量库到检索接模型的主线，适合动手搭第一条 RAG 链路。
@@ -1352,10 +1366,12 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 在实际项目中，Skill 往往对应一个可复用的能力模块，通过组合不同 Tool 实现完整场景闭环。
 
+**推荐阅读：**
+
 **① OpenAI：Function Calling 指南**
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
-- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
+- 💡 推荐理由：结构化调用的行业常用约定，对应自然语言如何变成 JSON 参数、运行时如何执行与回写的闭环。
 
 **② Anthropic：Tool Use 概览**
 
@@ -1366,11 +1382,11 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 - 🔗 文档地址：https://modelcontextprotocol.io/introduction
 - 🔗 参考实现：https://github.com/modelcontextprotocol/servers
-- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
+- 💡 推荐理由：提供标准化的工具与数据暴露方式，支持多种客户端复用同一套 MCP 服务。
 
 **④ Agent Skills with Anthropic**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
 - 💡 推荐理由：学习用开放标准构建可复用的智能体技能，掌握将技能、MCP 与子智能体组合的方法，搭建能访问外部数据、具备专业知识的强大的智能体系统。
 
 ---
@@ -1396,7 +1412,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **① 吴恩达：多智能体系统入门介绍**
 
-- 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
 - 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 **② HuggingFace Agents Course（系统入门首选）**
@@ -1466,10 +1482,10 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐课程：**
 
-**① DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
+**① CMU: Agents and Multi-Agent Communication**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
+- 🔗 课程地址：https://www.youtube.com/watch?v=ixLXrgF77ME
+- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 Agents 交流机制的绝佳资源。
 
 **推荐阅读：**
 
@@ -1594,19 +1610,19 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
+- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合从一条可复现的移动端指令跑通到自定义流程。
 
 **② UI-TARS**
 
 - 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
 - ⭐ GitHub Stars: 10k+ 
-- 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。
+- 💡 推荐理由：字节开源的原生 GUI 交互 / 多模态智能体，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。
 
 **③ AgentCPM-GUI**
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
-- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行，更适合端上隐私敏感场景与低延迟需求。
+- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调轻量模型 + 强化学习微调，便于在端侧设备上运行，适合端上隐私敏感场景与低延迟需求。
 
 #### 4.2 🌐 Computer Use Agent
 
@@ -1614,13 +1630,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/browser-use/browser-use   
 - ⭐ GitHub Stars: 90k+  
-- 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持表单填写、购物等网页操作。
+- 💡 推荐理由：社区热度较高浏览器自动化 Agent，能够控制真实浏览器，支持表单填写、购物等网页操作。
 
 **② Anthropic Computer Use**
 
 - 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
 - ⭐ GitHub Stars: 16k+  
-- 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。
+- 💡 推荐理由：Anthropic 官方的Computer Use 示例集合，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。
 
 #### 4.3 🔍 DeepResearch Agent
 
@@ -1628,13 +1644,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
+- 💡 推荐理由：适合作为全流程主线的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 **② dzhng/deep-research**
 
 - 🔗 仓库地址：https://github.com/dzhng/deep-research   
 - ⭐ GitHub Stars: 18k+  
-- 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。
+- 💡 推荐理由：极简实现（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。
 
 
 #### 4.4 🛍️ 基于 OpenClaw 部署小红书自动运营
@@ -1696,13 +1712,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-<br>
-<br>
-
 ---
 
-<br>
-<br>
 
 ### 👥 组织者
 
