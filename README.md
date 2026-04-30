@@ -535,10 +535,19 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐阅读：**
 
-**Anthropic：Effective Context Engineering for AI Agents**
+**① MemGPT**
 
-- 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-- 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
+- 🔗 论文地址：https://arxiv.org/abs/2310.08560
+- 🔗 仓库地址：https://github.com/cpacker/MemGPT
+- 💡 推荐理由：将 LLM 视为操作系统，通过虚拟上下文管理和分层存储实现无限记忆，是理解记忆层架构设计的奠基性工作。
+
+**② Mem0**
+
+- 🔗 仓库地址：https://github.com/mem0ai/mem0
+- ⭐ GitHub Stars: 54k+
+- 🔗 论文地址：https://arxiv.org/pdf/2504.19413
+- 🔗 博客地址：https://get.mem.ai/blog
+- 💡 推荐理由：为LLM提供的智能的，可自我改进的记忆层，可以实现在各种应用中提供更加个性化的和连贯一致的用户体验，是较常用的记忆层实现参考之一。
 
 #### 🔧 2.3 工具调用
 
@@ -1303,33 +1312,39 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐阅读：**
 
-**① Anthropic：Effective Context Engineering for AI Agents**
+**① MemGPT**
+
+- 🔗 论文地址：https://arxiv.org/abs/2310.08560
+- 🔗 仓库地址：https://github.com/cpacker/MemGPT
+- 💡 推荐理由：将 LLM 视为操作系统，通过虚拟上下文管理和分层存储实现无限记忆，是理解记忆层架构设计的奠基性工作。
+
+**② Anthropic：Effective Context Engineering for AI Agents**
 
 - 🔗 文档地址：https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 - 💡 推荐理由：讲解如何有效地收集和管理上下文信息，最大化 Agent 的推理效率与输出质量。
 
-**② Claude-Mem**
+**③ Claude-Mem**
 
 - 🔗 文档地址：https://docs.claude-mem.ai/introduction
 - 🔗 仓库地址：https://github.com/thedotmack/claude-mem
 - 💡 推荐理由：工程向的长期记忆/持久化参考，适合自建部署时阅读。
 
-**③ Mem0（The Memory Layer for AI Agents）**
+**④ Mem0**
 
 - 🔗 仓库地址：https://github.com/mem0ai/mem0
 - ⭐ GitHub Stars: 54k+
 - 🔗 论文地址：https://arxiv.org/pdf/2504.19413
 - 🔗 博客地址：https://get.mem.ai/blog
-- 💡 推荐理由：较常用的记忆层实现参考之一；可先读论文与博客了解动机与能力边界，再决定是否接入。
+- 💡 推荐理由：为LLM提供的智能的，可自我改进的记忆层，可以实现在各种应用中提供更加个性化的和连贯一致的用户体验，是较常用的记忆层实现参考之一。
 
 
-**④ Agent Memory 综述（长文 PDF，选读）**
+**⑤ Agent Memory 综述（长文 PDF，选读）**
 
 - 🔗 论文地址：https://arxiv.org/pdf/2512.13564
 - 💡 推荐理由：可作为 agent memory 研究进展的补充阅读。
 
 
-**⑤ LangChain 文档：RAG**
+**⑥ LangChain 文档：RAG**
 
 - 🔗 文档地址：https://docs.langchain.com/oss/python/langchain/rag
 - 💡 推荐理由：官方文档里从加载、切分、向量库到检索接模型的主线，适合动手搭第一条 RAG 链路。
