@@ -560,7 +560,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 **OpenAI：Function Calling 指南**
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
-- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
+- 💡 推荐理由：结构化调用的行业常用约定，对应自然语言如何变成 JSON 参数、运行时如何执行与回写的闭环。
 
 ---
 
@@ -741,7 +741,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
+- 💡 推荐理由：面向 Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从一条可复现的移动端指令跑通到自定义流程。
 
 
 
@@ -751,7 +751,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
+- 💡 推荐理由：适合作为全流程主线的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 
 
@@ -1383,7 +1383,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 **① OpenAI：Function Calling 指南**
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
-- 💡 推荐理由：结构化调用的行业常用约定，对应**自然语言如何变成 JSON 参数、运行时如何执行与回写**的闭环。
+- 💡 推荐理由：结构化调用的行业常用约定，对应自然语言如何变成 JSON 参数、运行时如何执行与回写的闭环。
 
 **② Anthropic：Tool Use 概览**
 
@@ -1622,19 +1622,19 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 **Android 等真机/模拟器** 的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从**一条可复现的移动端指令**跑通到自定义流程。
+- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从一条可复现的移动端指令跑通到自定义流程。
 
 **② UI-TARS**
 
 - 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
 - ⭐ GitHub Stars: 10k+ 
-- 💡 推荐理由：字节开源的**原生 GUI 交互 / 多模态智能体**，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。
+- 💡 推荐理由：字节开源的原生 GUI 交互 / 多模态智能体，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。
 
 **③ AgentCPM-GUI**
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
-- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调**轻量模型 + 强化学习微调**，便于在端侧设备上运行，更适合端上隐私敏感场景与低延迟需求。
+- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调轻量模型 + 强化学习微调，便于在端侧设备上运行，更适合端上隐私敏感场景与低延迟需求。
 
 #### 4.2 🌐 Computer Use Agent
 
@@ -1642,13 +1642,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/browser-use/browser-use   
 - ⭐ GitHub Stars: 90k+  
-- 💡 推荐理由：社区热度较高**浏览器自动化 Agent**，能够控制真实浏览器，支持表单填写、购物等网页操作。
+- 💡 推荐理由：社区热度较高浏览器自动化 Agent，能够控制真实浏览器，支持表单填写、购物等网页操作。
 
 **② Anthropic Computer Use**
 
 - 🔗 仓库地址：https://github.com/anthropics/anthropic-quickstarts    
 - ⭐ GitHub Stars: 16k+  
-- 💡 推荐理由：Anthropic 官方的 **Computer Use 示例集合**，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。
+- 💡 推荐理由：Anthropic 官方的Computer Use 示例集合，包含截图+键鼠控制的完整 Agent 实现，提供操作系统级操作能力（文件管理、多应用协调等），适合需要跨应用/跨窗口、脱离浏览器的桌面自动化场景。
 
 #### 4.3 🔍 DeepResearch Agent
 
@@ -1656,13 +1656,13 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
-- 💡 推荐理由：适合作为**全流程主线**的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
+- 💡 推荐理由：适合作为全流程主线的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
 
 **② dzhng/deep-research**
 
 - 🔗 仓库地址：https://github.com/dzhng/deep-research   
 - ⭐ GitHub Stars: 18k+  
-- 💡 推荐理由：**极简实现**（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。
+- 💡 推荐理由：极简实现（约 500 行核心代码），无框架依赖，原生展示多轮 query 生成、并发抓取、汇总成 Markdown 的完整链路。适合快速理解 DeepResearch 原理、教学拆解或迁移到自己的技术栈。
 
 
 #### 4.4 🛍️ 基于 OpenClaw 部署小红书自动运营
