@@ -457,7 +457,7 @@
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的系统。
 
 **与普通 Chatbot 的区别：**
 
@@ -480,7 +480,7 @@
 
 **② 吴恩达：Agentic AI**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agentic-ai/
 - 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
 
 ### ⚙️ 二、Agent 核心能力
@@ -545,6 +545,8 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 **工具是什么：把外部能力封装成可调用的函数**
 
 工具是 Agent 的“手脚”：搜索、计算器、访问数据库、发消息等。除了名字和说明要清楚，还要约定入参/出参、超时、重试、是否改数据、给多大权限。
+
+**推荐阅读：**
 
 **OpenAI：Function Calling 指南**
 
@@ -1201,7 +1203,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 #### 📋 1.1 Agent 的核心定义与能力边界
 
-**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的计算系统。
+**定义：** 智能体（Agent）被定义为一种能够感知环境、进行推理、自主决策并采取行动以实现特定目标的系统。
 
 **与普通 Chatbot 的区别：**
 
@@ -1224,12 +1226,12 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 **② 吴恩达：Agentic AI**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agentic-ai/
 - 💡 推荐理由：从 Agentic Workflow 基础概念到 Reflection、Tool Use、多 Agent 协作等设计模式，是系统学习 Agent 工程实践的入门课程。
 
-**③ Lilian Weng：LLM Powered Autonomous Agents（博文）**
+**③ Lilian Weng：LLM Powered Autonomous Agents**
 
-- 🔗 文章地址：https://lilianweng.github.io/posts/2023-06-23-agent/
+- 🔗 博文地址：https://lilianweng.github.io/posts/2023-06-23-agent/
 - 💡 推荐理由：全面解析 LLM Agent 的设计范式与关键技术，配有丰富的案例分析，是理解 LLM Agent 架构设计的优质参考。
 
 **④ Agent 领域综述**
@@ -1361,6 +1363,8 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 在实际项目中，Skill 往往对应一个可复用的能力模块，通过组合不同 Tool 实现完整场景闭环。
 
+**推荐阅读：**
+
 **① OpenAI：Function Calling 指南**
 
 - 🔗 文档地址：https://platform.openai.com/docs/guides/function-calling
@@ -1379,7 +1383,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **④ Agent Skills with Anthropic**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
+- 🔗 视频地址：https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/information
 - 💡 推荐理由：学习用开放标准构建可复用的智能体技能，掌握将技能、MCP 与子智能体组合的方法，搭建能访问外部数据、具备专业知识的强大的智能体系统。
 
 ---
