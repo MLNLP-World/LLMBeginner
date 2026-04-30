@@ -741,8 +741,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向 Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从一条可复现的移动端指令跑通到自定义流程。
-
+- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合从一条可复现的移动端指令跑通到自定义流程。
 
 
 #### 4.2 🔍 DeepResearch Agent
@@ -1394,7 +1393,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 - 🔗 文档地址：https://modelcontextprotocol.io/introduction
 - 🔗 参考实现：https://github.com/modelcontextprotocol/servers
-- 💡 推荐理由：用统一方式暴露工具与数据，多客户端可复用同一套 MCP 服务；协议与参考实现可对照阅读。
+- 💡 推荐理由：提供标准化的工具与数据暴露方式，支持多种客户端复用同一套 MCP 服务。
 
 **④ Agent Skills with Anthropic**
 
@@ -1622,7 +1621,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/droidrun/mobilerun  
 - ⭐ GitHub Stars: 8k+ 
-- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合和 Awesome 里「手机 GUI」类线索对照，从一条可复现的移动端指令跑通到自定义流程。
+- 💡 推荐理由：面向Android 等真机/模拟器的自然语言操作框架，多模型后端、多步规划与截屏/可访问性等感知组合较完整，适合从一条可复现的移动端指令跑通到自定义流程。
 
 **② UI-TARS**
 
@@ -1634,7 +1633,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 - 🔗 仓库地址：https://github.com/OpenBMB/AgentCPM-GUI  
 - ⭐ GitHub Stars: 1.4k+ 
-- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调轻量模型 + 强化学习微调，便于在端侧设备上运行，更适合端上隐私敏感场景与低延迟需求。
+- 💡 推荐理由：OpenBMB社区开源的GUI-Agent强调轻量模型 + 强化学习微调，便于在端侧设备上运行，适合端上隐私敏感场景与低延迟需求。
 
 #### 4.2 🌐 Computer Use Agent
 
