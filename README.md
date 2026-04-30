@@ -134,17 +134,10 @@
 
 </div>
 
-<br>
-<br>
-
 <details>
 <summary><strong>查看精简版本内容</strong></summary>
 
-
-
 <div style="margin-left: 1.5em;">
-
-
 
 <details>
 <summary><strong>🗺️ Stage 0: Big Picture</strong></summary>
@@ -767,12 +760,10 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-<br>
-<br>
+
 
 ---
-<br>
-<br>
+
 
 <div style="background:#F3F0D7; color:#000000; border-left:5px solid #A3B18A; padding:12px 16px; border-radius:8px;">
 
@@ -786,8 +777,6 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </div>
 
-<br>
-<br>
 
 
 
@@ -1723,13 +1712,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 </details>
 
-<br>
-<br>
-
 ---
 
-<br>
-<br>
 
 ### 👥 组织者
 
