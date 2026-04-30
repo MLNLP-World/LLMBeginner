@@ -585,7 +585,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **吴恩达：多智能体系统入门介绍**
 
-- 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
 - 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 
@@ -596,7 +596,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 - 🔗 论文地址：https://arxiv.org/abs/2307.07924
 - 🔗 仓库地址：https://github.com/OpenBMB/ChatDev
 - ⭐ GitHub Stars: 32k+
-- 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接
+- 💡 重点理解：将软件开发流程（需求分析 → 设计 → 编码 → 测试）映射为多 Agent 角色分工，每个阶段由不同”职能” Agent 负责，Agent 间通过对话完成交接。
 
 
 
@@ -636,10 +636,10 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐课程：**
 
-**DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
+**CMU: Agents and Multi-Agent Communication**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
+- 🔗 课程地址：https://www.youtube.com/watch?v=ixLXrgF77ME
+- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 AI Agents 交流机制的绝佳资源。
 
 **推荐阅读：**
 
@@ -648,7 +648,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 - 🔗 论文地址：https://arxiv.org/abs/2308.08155
 - 🔗 仓库地址：https://github.com/microsoft/autogen
 - ⭐ GitHub Stars: 57k+
-- 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一
+- 💡 推荐理由：微软提出的多 Agent 对话框架，支持灵活定义 Agent 角色与对话流程，是目前学术和工程中使用最广泛的 MAS 框架之一。
 
 
 #### 🏛️ 3.3 智能体团队如何「组织」？——组织结构
@@ -1424,7 +1424,7 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **① 吴恩达：多智能体系统入门介绍**
 
-- 🔗 课程地址：https://www.bilibili.com/video/BV1DfrdByE2H?p=26
+- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
 - 💡 推荐理由：介绍多 Agent 的核心概念与应用场景。
   
 **② HuggingFace Agents Course（系统入门首选）**
@@ -1494,10 +1494,10 @@ Agent 的本质是“系统”而非“模型”，LLM 提供推理能力，而�
 
 **推荐课程：**
 
-**① DeepLearning.AI：AI Agentic Design Patterns with AutoGen**
+**① CMU: Agents and Multi-Agent Communication**
 
-- 🔗 课程地址：https://learn.deeplearning.ai/courses/agentic-ai/lesson/jcl177/planning-workflows
-- 💡 推荐理由：微软 AutoGen 团队主讲，用 2 小时直接演示自然语言消息、工具调用等多种通信模式的代码实现，是理解交互协议最高效的实践课程。
+- 🔗 课程地址：https://www.youtube.com/watch?v=ixLXrgF77ME
+- 💡 推荐理由：Graham Neubig 教授主讲的《高级自然语言处理》课程讲座，是深入理解 Agents 交流机制的绝佳资源。
 
 **推荐阅读：**
 
