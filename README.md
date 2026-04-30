@@ -211,7 +211,7 @@
 
 <!-- > 补充材料：见 [stage1/supply.md](stage1/supply.md) -->
 
-### 🟦 一、Deep Learning（深度学习）
+### 🟦 一、深度学习 (Deep Learning)
 
 深度学习是理解 LLM 的基石。本部分帮助你掌握神经网络、反向传播、优化算法等核心概念，为后续学习 Transformer 架构打下坚实基础。
 
@@ -235,7 +235,7 @@
 
 ---
 
-### 🟩 二、Reinforcement Learning（强化学习）
+### 🟩 二、强化学习 (Reinforcement Learning)
 
 强化学习是 LLM 后训练（RLHF）的核心技术。掌握 RL 基础将帮助你理解如何通过人类反馈优化模型行为。
 
@@ -858,7 +858,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 
 
-### 🟦 一、Deep Learning（深度学习）
+### 🟦 一、深度学习 (Deep Learning)
 
 深度学习是理解 LLM 的基石。本部分帮助你掌握神经网络、反向传播、优化算法等核心概念，为后续学习 Transformer 架构打下坚实基础。
 
@@ -891,7 +891,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 ---
 
-### 🟩 二、Reinforcement Learning（强化学习）
+### 🟩 二、强化学习 (Reinforcement Learning)
 
 强化学习是 LLM 后训练（RLHF）的核心技术。掌握 RL 基础将帮助你理解如何通过人类反馈优化模型行为。
 
