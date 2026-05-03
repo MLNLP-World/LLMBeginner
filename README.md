@@ -351,7 +351,6 @@
 
 ### 🧪 二、实战项目
 
-
 #### 🔍 DeepResearch Agent
 
 **langchain-ai/open_deep_research**
@@ -359,6 +358,43 @@
 - 🔗 仓库地址：https://github.com/langchain-ai/open_deep_research   
 - ⭐ GitHub Stars: 11k+  
 - 💡 推荐理由：适合作为全流程主线的多轮检索、压缩与成稿 pipeline，和 LangChain 生态、Provider/MCP 组合较好接；想一次性完成“子研究 → 综合 → 报告”的模块切分时优先选它。
+
+
+#### 🖥️ GUI Agent
+
+**UI-TARS**
+
+- 🔗 仓库地址：https://github.com/bytedance/UI-TARS  
+- ⭐ GitHub Stars: 10k+ 
+- 💡 推荐理由：字节开源的原生 GUI 交互 / 多模态智能体，支持桌面与移动端，结合 VLM 视觉理解与精准动作预测。
+
+#### 🌐 Computer Use Agent
+
+**Browser Use**
+
+- 🔗 仓库地址：https://github.com/browser-use/browser-use   
+- ⭐ GitHub Stars: 90k+  
+- 💡 推荐理由：社区热度较高浏览器自动化 Agent，能够控制真实浏览器，支持表单填写、购物等网页操作。
+
+#### 🛍️ 基于 OpenClaw 部署小红书自动运营
+
+**① OpenClaw**
+- 🔗 仓库地址：https://github.com/openclaw/openclaw
+- ⭐ GitHub Stars: 360k+（GitHub 史上最快破记录的开源项目）
+- 💡 项目背景：由奥地利独立开发者 Peter Steinberger 于 2025 年 11 月发布，本地运行、全平台支持，通过 Skill 插件体系可扩展各类自动化能力，接入 Telegram / Feishu / WeChat 等 20+ 渠道，100 天内超过 Linux 和 React 成为 GitHub 最多 Star 的软件仓库。
+
+**② xiaohongshu-ops-skill（OpenClaw 小红书运营插件）**
+- 🔗 仓库地址：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
+- ⭐ GitHub Stars: 600+
+- 💡 推荐理由：将 OpenClaw 变成小红书运营助手，支持"分析竞品 → 智能选题 → 生成文案 → 自动发布"全流程，基于浏览器自动化（CDP）真实账号操作，作者实测 20 天从 0 粉涨到 1000+ 粉，且未触发风控。
+- 🛠️ 推荐实现路径：
+  ```
+  1. 安装 OpenClaw 本体，配置 LLM API Key
+  2. 安装小红书 Skill：https://github.com/Xiangyu-CAS/xiaohongshu-ops-skill
+  3. 扫码绑定小红书账号（仅需一次）
+  4. 下达自然语言指令，Agent 自动完成热点抓取 → 文案创作 → 定时发布
+  ```
+- ⚠️ 注意：控制操作频率，避免短时大量发布触发平台风控。
 
 
 </details>
