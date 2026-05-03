@@ -110,12 +110,12 @@
 <div align="center">
 <table width="100%">
   <tr>
-    <td width="8%" align="center">⚡</td>
+    <td width="5%" align="center">⚡</td>
     <td width="45%" valign="middle">
       <a href="#-精简版本"><b>精简版本</b></a><br/>
       <sub>快速跑通主线，尽快建立整体框架。</sub>
     </td>
-    <td width="8%" align="center">📚</td>
+    <td width="5%" align="center">📚</td>
     <td width="45%" valign="middle">
       <a href="#-详细版本"><b>详细版本</b></a><br/>
       <sub>系统打牢基础，补充更多代码与实践。</sub>
