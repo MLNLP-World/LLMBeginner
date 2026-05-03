@@ -118,7 +118,7 @@
     <td width="5%" align="center">📚</td>
     <td width="45%" valign="middle">
       <a href="#-详细版本"><b>详细版本</b></a><br/>
-      <sub>系统打牢基础，补充更多代码与实践。</sub>
+      <sub>系统打牢基础，补充更多代码实践。</sub>
     </td>
   </tr>
 </table>
