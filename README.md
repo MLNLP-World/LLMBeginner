@@ -128,6 +128,10 @@
 
 <br>
 
+<div align="center">
+  <img src="asset/version_compare.png" alt="LLM Beginner Version Compare" width="90%" />
+</div>
+
 ---
 
 
