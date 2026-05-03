@@ -107,6 +107,7 @@
 
 针对不同程度的学习者，本项目建立了两个版本的学习路径供您选择：
 
+<div align="center">
 <table width="100%">
   <tr>
     <td width="180px" align="center">⚡</td>
@@ -123,6 +124,7 @@
     </td>
   </tr>
 </table>
+</div>
 
 <br>
 
