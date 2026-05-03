@@ -5,36 +5,23 @@
 # 零基础通关 LLM 的项目式学习路线
 <p align="center">
   <a href="https://github.com/MLNLP-World/LLMBeginner/stargazers">
-    <img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Stars&color=f59e0b&cacheSeconds=60" alt="GitHub stars" />
+    <img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Stars&color=111827" alt="GitHub stars" />
   </a>
-  &nbsp;
   <a href="https://github.com/MLNLP-World/LLMBeginner/network/members">
-    <img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Forks&color=0ea5e9&cacheSeconds=60" alt="GitHub forks" />
+    <img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Forks&color=111827" alt="GitHub forks" />
   </a>
-  &nbsp;
-  <a href="https://github.com/MLNLP-World/LLMBeginner/watchers">
-    <img src="https://img.shields.io/github/watchers/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Watch&color=22c55e&cacheSeconds=60" alt="GitHub watchers" />
+  <a href="https://github.com/MLNLP-World/LLMBeginner/issues">
+    <img src="https://img.shields.io/github/issues/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Issues&color=111827" alt="GitHub issues" />
   </a>
+  <img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat&label=License&color=111827" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/MLNLP-World/LLMBeginner?style=flat&label=Last%20Commit&color=111827" alt="Last Commit" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat-square&label=License&color=111827" alt="License" />
-  &nbsp;
-  <img src="https://img.shields.io/github/last-commit/MLNLP-World/LLMBeginner?style=flat-square&label=Last%20Commit&color=2563eb" alt="Last Commit" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square" alt="PRs Welcome" />
-  &nbsp;
-  <img src="https://awesome.re/badge-flat2.svg" alt="Awesome" />
+  <img src="https://img.shields.io/badge/LLM-Learning%20Path-2563eb?style=flat" alt="LLM Learning Path" />
+  <img src="https://img.shields.io/badge/Project--Based-Study-2563eb?style=flat" alt="Project Based Study" />
+  <img src="https://img.shields.io/badge/Zero%20to-Agent-2563eb?style=flat" alt="Zero to Agent" />
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/LLM-Learning%20Path-f97316?style=flat-square" alt="LLM Learning Path" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Project--Based-Study-14b8a6?style=flat-square" alt="Project Based Study" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Zero%20to-Agent-8b5cf6?style=flat-square" alt="Zero to Agent" />
-</p>
-<div align="center">
 
 > 该项目旨在为初学者提供一条清晰的大模型学习路径，从零基础出发，循序渐进地理解 LLM 的核心原理、训练机制与应用范式，并逐步过渡到智能体（Agent）的构建与基础实践。我们希望在“会用”的基础上，进一步帮助学习者实现“看懂、做出、跑通”。
 
