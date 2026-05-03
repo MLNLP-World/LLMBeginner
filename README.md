@@ -109,13 +109,17 @@
 
 <table width="100%">
   <tr>
-    <td align="center" width="50%">
-      <h3>⚡ 精简版本</h3>
-      <p>快速跑通主线</p>
+    <td width="80px" align="center">⚡</td>
+    <td>
+      <a href="#-精简版本"><b>精简版本</b></a><br/>
+      <sub>快速跑通主线，尽快建立整体框架。</sub>
     </td>
-    <td align="center" width="50%">
-      <h3>📚 详细版本</h3>
-      <p>系统打牢基础</p>
+  </tr>
+  <tr>
+    <td width="80px" align="center">📚</td>
+    <td>
+      <a href="#-详细版本"><b>详细版本</b></a><br/>
+      <sub>系统打牢基础，补充更多代码与实践。</sub>
     </td>
   </tr>
 </table>
