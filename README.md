@@ -107,14 +107,20 @@
 
 针对不同程度的学习者，本项目建立了两个版本的学习路径供您选择：
 
-<p align="center">
-  <a href="#-精简版本">
-    <img src="https://img.shields.io/badge/⚡%20精简版本-快速跑通主线-f59e0b?style=flat-square" alt="精简版本" />
-  </a>
-  <a href="#-详细版本">
-    <img src="https://img.shields.io/badge/📚%20详细版本-系统打牢基础-2563eb?style=flat-square" alt="详细版本" />
-  </a>
-</p>
+<table align="center" width="42%">
+  <tr>
+    <td align="center">
+      <h2>⚡</h2>
+      <b>精简版本</b><br/>
+      <sub>快速跑通主线</sub>
+    </td>
+    <td align="center">
+      <h2>📚</h2>
+      <b>详细版本</b><br/>
+      <sub>系统打牢基础</sub>
+    </td>
+  </tr>
+</table>
 
 <br>
 
