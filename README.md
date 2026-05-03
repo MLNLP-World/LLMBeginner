@@ -3,10 +3,16 @@
 <img src="asset/image.png" alt="Slay the LLM Maze" width="320" />
 
 # 零基础通关 LLM 的项目式学习路线
-<p>
-  <img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=for-the-badge&color=f59e0b" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=for-the-badge&color=0ea5e9" alt="GitHub forks" />
-  <img src="https://img.shields.io/github/watchers/MLNLP-World/LLMBeginner?style=for-the-badge&color=22c55e" alt="GitHub watchers" />
+<p align="center">
+  <a href="https://github.com/MLNLP-World/LLMBeginner/stargazers">
+    <img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Stars&color=f59e0b&cacheSeconds=60" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/MLNLP-World/LLMBeginner/network/members">
+    <img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Forks&color=0ea5e9&cacheSeconds=60" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/MLNLP-World/LLMBeginner/watchers">
+    <img src="https://img.shields.io/github/watchers/MLNLP-World/LLMBeginner?style=for-the-badge&logo=github&label=Watch&color=22c55e&cacheSeconds=60" alt="GitHub watchers" />
+  </a>
 </p>
 <p>
   <img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat-square&color=111827" alt="License" />
