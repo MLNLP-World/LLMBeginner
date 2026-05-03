@@ -109,10 +109,10 @@
 
 <p align="center">
   <a href="#-精简版本">
-    <img src="https://img.shields.io/badge/⚡%20精简版本-快速跑通主线-f59e0b?style=for-the-badge" alt="精简版本" />
+    <img src="https://img.shields.io/badge/⚡%20精简版本-快速跑通主线-f59e0b?style=flat-square" alt="精简版本" />
   </a>
   <a href="#-详细版本">
-    <img src="https://img.shields.io/badge/📚%20详细版本-系统打牢基础-2563eb?style=for-the-badge" alt="详细版本" />
+    <img src="https://img.shields.io/badge/📚%20详细版本-系统打牢基础-2563eb?style=flat-square" alt="详细版本" />
   </a>
 </p>
 
