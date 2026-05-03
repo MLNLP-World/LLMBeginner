@@ -297,7 +297,7 @@
 
 **① minimind**
 
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v（多模态版本）
+- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v     （多模态版本）
 - ⭐ GitHub Stars: 20k+
 - 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline。
 - 📑 推荐学习顺序：
@@ -723,7 +723,7 @@
 
 **② minimind（中文小模型全流程实现）**
 
-- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v（多模态版本）
+- 🔗 仓库地址：https://github.com/jingyaogong/minimind ｜ https://github.com/jingyaogong/minimind-v （多模态版本）
 - ⭐ GitHub Stars: 20k+
 - 💡 推荐理由：完整实现了预训练 → SFT → RLHF 全流程，代码注释详细，中文社区友好，适合跟着走完整个训练 pipeline。
 
@@ -747,7 +747,7 @@
 
 在真实大模型上做实验，是从"理解原理"到"工程落地"的关键一步。
 
-#### 5.1 高效微调（PEFT）
+#### 6.1 高效微调（PEFT）
 
 全量微调大模型成本极高，PEFT 方法只训练少量参数，即可达到接近全量微调的效果。
 
@@ -769,7 +769,7 @@
 - ⭐ GitHub Stars: 8k+
 - 💡 推荐理由：字节跳动开源的分布式 RLHF 训练框架，支持 PPO / GRPO 等算法，与 HuggingFace 生态无缝集成，是目前在真实大模型上做 RLHF 实验的最佳选择之一
 
-#### 5.2 推理与部署
+#### 6.2 推理与部署
 
 **① Ollama（本地运行大模型最简单的方式）**
 
@@ -799,7 +799,7 @@
             → 语言模型（LLM）：统一处理文字 + 图像 token，生成回答
 ```
 
-#### 📖 6.1 核心论文
+#### 📖 7.1 核心论文
 
 **① CLIP（视觉-语言对齐的奠基之作）**
 
@@ -817,7 +817,7 @@
 - 🔗 论文地址：https://arxiv.org/abs/2308.12966
 - 💡 推荐理由：详细描述了一个完整的多模态模型训练流程，包括多阶段训练策略和数据配比，适合工程落地参考。
 
-#### 💻 6.2 代码实践
+#### 💻 7.2 代码实践
 
 **LLaVA 官方仓库**
 
@@ -1333,6 +1333,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 7k+
 - 💡 推荐理由：北大元语言团队出品，采用 MoE 混合专家模型 + 多智能体协作架构，内置四类 Agent 角色（信息收集、法律研究、法律建议、报告生成），在 LawBench 上以 60.08 分显著超越 GPT-4（52.35 分）。融合知识图谱与 9.3 万份判决书训练的相似度模型，是目前最完整的中文法律多 Agent 系统实现。
 - 🎯 实战建议：跑通多 Agent 协作的离婚咨询 Demo，理解"信息收集 → 法规检索 → 生成咨询报告"的完整 SOP 流程。
+- ⚠️ 注意：该项目仅适合作为教学 Demo，不应替代律师意见或真实法律决策。
 
 #### 4.6 📈 金融智能体
 
@@ -1346,6 +1347,8 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 6k+
 - 💡 推荐理由：FinGPT 的 Agent 进阶版，集成 LLM + 强化学习 + 量化分析三大能力，提供完整的投研自动化、交易策略生成、风险评估 Agent pipeline，适合作为金融智能体实战的完整项目模板。
 
+- ⚠️ 注意：该项目仅适合作为教学 Demo，不构成投资建议，不应用于真实交易决策。
+
 #### 4.7 🏥 医疗健康助手
 
 **① HuatuoGPT**
@@ -1354,7 +1357,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 - ⭐ GitHub Stars: 1k+
 - 💡 推荐理由：香港中文大学（深圳）出品，同时融合 ChatGPT 蒸馏数据与真实医生对话数据进行训练，提供 7B / 13B / 34B 多个版本。HuatuoGPT-II 在专家评测和中国执医考试中均超越 GPT-4，是目前最具代表性的开源中文医疗 LLM。
 - 🎯 实战建议：在 HuatuoGPT 基础上，结合病历知识库（RAG）构建一个"症状描述 → 初步分诊 → 用药建议 → 转诊提醒"的完整问诊 Agent，注意加入安全边界设计。
-
+- ⚠️ 注意：该项目仅适合作为教学 Demo，不构成任何专业医疗建议。
 </details>
 
 
