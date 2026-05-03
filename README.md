@@ -107,17 +107,15 @@
 
 针对不同程度的学习者，本项目建立了两个版本的学习路径供您选择：
 
-<table align="center" width="90%">
+<table width="100%">
   <tr>
     <td align="center" width="50%">
-      <div>⚡</div>
-      <b>精简版本</b><br/>
-      <sub>快速跑通主线</sub>
+      <h3>⚡ 精简版本</h3>
+      <p>快速跑通主线</p>
     </td>
     <td align="center" width="50%">
-      <div>📚</div>
-      <b>详细版本</b><br/>
-      <sub>系统打牢基础</sub>
+      <h3>📚 详细版本</h3>
+      <p>系统打牢基础</p>
     </td>
   </tr>
 </table>
