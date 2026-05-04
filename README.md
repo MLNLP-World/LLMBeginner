@@ -1378,19 +1378,19 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 ### 👥 组织者
 
 <p align="left">
-  <a href="https://github.com/chenyuanTKCY">
+  <a href="https://github.com/chenyuanTKCY" style="text-decoration: none;">
     <img src="https://github.com/chenyuanTKCY.png" width="80" height="80" alt="chenyuanTKCY" />
   </a>
-  <a href="https://github.com/ffcosmos">
+  <a href="https://github.com/ffcosmos" style="text-decoration: none;">
     <img src="https://github.com/ffcosmos.png" width="80" height="80" alt="ffcosmos" />
   </a>
-  <a href="https://github.com/Nahtreom">
+  <a href="https://github.com/Nahtreom" style="text-decoration: none;">
     <img src="https://github.com/Nahtreom.png" width="80" height="80" alt="Nahtreom" />
   </a>
-  <a href="https://github.com/SivilTaram">  
+  <a href="https://github.com/SivilTaram" style="text-decoration: none;">  
     <img src="https://github.com/SivilTaram.png"  width="80" height="80" alt="SivilTaram"> 
   </a> 
-  <a href="https://github.com/qinlibo-hit">  
+  <a href="https://github.com/qinlibo-hit" style="text-decoration: none;">  
     <img src="https://github.com/qinlibo-hit.png" width="80" height="80" alt="qinlibo-hit" >
   </a> 
 </p>
