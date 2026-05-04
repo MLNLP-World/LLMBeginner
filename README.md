@@ -1378,7 +1378,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 ### 👥 组织者
 
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/chenyuanTKCY"><img src="https://images.weserv.nl/?url=github.com/chenyuanTKCY.png?v=4&mask=circle" width="80"></a>&nbsp;&nbsp;
   <a href="https://github.com/ffcosmos"><img src="https://images.weserv.nl/?url=github.com/ffcosmos.png?v=4&mask=circle" width="80"></a>&nbsp;&nbsp;
   <a href="https://github.com/Nahtreom"><img src="https://images.weserv.nl/?url=github.com/Nahtreom.png?v=4&mask=circle" width="80"></a>&nbsp;&nbsp;
