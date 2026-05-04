@@ -1390,7 +1390,7 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
   <a href="https://github.com/SivilTaram">  
     <img src="https://github.com/SivilTaram.png"  width="64" height="64" alt="SivilTaram"> 
   </a> 
-  <a href="https://github.com/yizhen20133868">  
+  <a href="https://github.com/qinlibo-hit">  
     <img src="https://github.com/qinlibo-hit.png" width="64" height="64" alt="qinlibo-hit" >
   </a> 
 
