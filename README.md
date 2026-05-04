@@ -1379,20 +1379,19 @@ Agent 的行动空间（Environment）定义了它能感知什么、能执行什
 
 <p align="left">
   <a href="https://github.com/chenyuanTKCY">
-    <img src="https://github.com/chenyuanTKCY.png" width="64" height="64" alt="chenyuanTKCY" />
+    <img src="https://github.com/chenyuanTKCY.png" width="80" height="80" alt="chenyuanTKCY" />
   </a>
   <a href="https://github.com/ffcosmos">
-    <img src="https://github.com/ffcosmos.png" width="64" height="64" alt="ffcosmos" />
+    <img src="https://github.com/ffcosmos.png" width="80" height="80" alt="ffcosmos" />
   </a>
   <a href="https://github.com/Nahtreom">
-    <img src="https://github.com/Nahtreom.png" width="64" height="64" alt="Nahtreom" />
+    <img src="https://github.com/Nahtreom.png" width="80" height="80" alt="Nahtreom" />
   </a>
   <a href="https://github.com/SivilTaram">  
-    <img src="https://github.com/SivilTaram.png"  width="64" height="64" alt="SivilTaram"> 
+    <img src="https://github.com/SivilTaram.png"  width="80" height="80" alt="SivilTaram"> 
   </a> 
   <a href="https://github.com/qinlibo-hit">  
-    <img src="https://github.com/qinlibo-hit.png" width="64" height="64" alt="qinlibo-hit" >
+    <img src="https://github.com/qinlibo-hit.png" width="80" height="80" alt="qinlibo-hit" >
   </a> 
-
 </p>
 
