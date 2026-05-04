@@ -4,12 +4,11 @@
 
 # 零基础通关 LLM 的项目式学习路线
 <p align="center">
-  <a href="https://github.com/MLNLP-World/LLMBeginner/stargazers"><img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Stars&color=111827" alt="GitHub stars" />
-  </a>
-  <a href="https://github.com/MLNLP-World/LLMBeginner/network/members"><img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Forks&color=111827" alt="GitHub forks" />
-  </a>
-  <a href="https://github.com/MLNLP-World/LLMBeginner/issues"><img src="https://img.shields.io/github/issues/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Issues&color=111827" alt="GitHub issues" />
-  </a><img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat&label=License&color=111827" alt="License" /><img src="https://img.shields.io/github/last-commit/MLNLP-World/LLMBeginner?style=flat&label=Last%20Commit&color=111827" alt="Last Commit" />
+  <a href="https://github.com/MLNLP-World/LLMBeginner/stargazers"><img src="https://img.shields.io/github/stars/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Stars&color=111827" alt="GitHub stars" /></a>
+  <a href="https://github.com/MLNLP-World/LLMBeginner/network/members"><img src="https://img.shields.io/github/forks/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Forks&color=111827" alt="GitHub forks" /></a>
+  <a href="https://github.com/MLNLP-World/LLMBeginner/issues"><img src="https://img.shields.io/github/issues/MLNLP-World/LLMBeginner?style=flat&logo=github&label=Issues&color=111827" alt="GitHub issues" /></a>
+  <img src="https://img.shields.io/github/license/MLNLP-World/LLMBeginner?style=flat&label=License&color=111827" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/MLNLP-World/LLMBeginner?style=flat&label=Last%20Commit&color=111827" alt="Last Commit" />
 </p>
 
 <p align="center">
